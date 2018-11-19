@@ -1,0 +1,13 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+
+@import "../components/capture/home";
+@import "../components/footer/footer";
+@import "../components/notFound/notFound";
+@import "../components/sales/description";
+@import "../components/step2/application";

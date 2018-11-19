@@ -1,0 +1,16 @@
+.footer {
+  height: 10vh;
+  background-color: #0c2461;
+  bottom: 0;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__link{
+    text-decoration: none;
+    color: #0077B5;
+    margin-left: 5px;
+  }
+}

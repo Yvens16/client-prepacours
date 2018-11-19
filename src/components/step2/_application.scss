@@ -1,0 +1,24 @@
+.application{
+  height: 100vh;
+  display: flex;
+
+  &__left{
+    flex: 0 0 40%;
+    background-color:#c0392b; 
+  }
+
+  &__right{
+    display: flex;
+    align-items: center;
+    flex: 0 0 60%;
+    background-color: #8e44ad;
+    &-form{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: #ecf0f1;
+    }
+  }
+
+}
