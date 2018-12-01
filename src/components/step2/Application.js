@@ -1,5 +1,5 @@
 import React from "react";
-
+import './_application.scss'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import moment from "moment";
@@ -16,6 +16,7 @@ class Application extends React.Component {
       date:moment()
     };
   }
+
 
   handleDate(e){
     this.setState({
@@ -34,7 +35,6 @@ class Application extends React.Component {
     e.preventDefault();
     console.log(this.state)
   }
-
   render() {
     const {name, phone, diff, help, date}= this.state;
     return (

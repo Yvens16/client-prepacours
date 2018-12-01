@@ -3,14 +3,14 @@
   display: flex;
 
   &__left{
-    flex: 0 0 40%;
+    flex: 0 0 60%;
     background-color:#c0392b; 
   }
 
   &__right{
     display: flex;
     align-items: center;
-    flex: 0 0 60%;
+    flex: 0 0 40%;
     background-color: #8e44ad;
     &-form{
       height: 100%;
