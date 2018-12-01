@@ -13,10 +13,44 @@ class Application extends React.Component {
       phone:"",
       help:"",
       diff:"",
-      date:moment()
+      date:moment(),
+
+      days:"",
+      hours:"",
+      minutes:"",
+      seconds:""
     };
   }
 
+  countDown(){
+    let endDate, x, now, beforeEnd, d, h, m, s;
+    endDate = new Date('Jan 5, 2019 00:00:00').getTime();
+
+    x = setInterval(() => {
+      now = new Date().getTime();
+      beforeEnd = endDate - now;
+
+      d = Math.floor(beforeEnd/(1000 * 60 * 60 * 24));
+
+      h = Math.floor((beforeEnd % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+      m = Math.floor((beforeEnd % (1000 * 60 * 60)) / (1000 * 60));
+
+      s = Math.floor((beforeEnd % (1000 * 60)) / 1000);
+
+      this.setState({
+            days : d,
+            hours: h,
+            minutes : m,
+            seconds:  s,
+      })
+
+    }, 1000)
+  }
+
+  componentDidMount(){
+    this.countDown();
+  }
 
   handleDate(e){
     this.setState({
@@ -36,14 +70,17 @@ class Application extends React.Component {
     console.log(this.state)
   }
   render() {
-    const {name, phone, diff, help, date}= this.state;
+    const {name, phone, diff, help, date, days, hours, minutes, seconds}= this.state;
     return (
       <main>
         <h1>
           Vous y êtes presque, vous avez juste à remplir ce petit formulaire
         </h1>
         <div className="application">
-        <div className="application__left"> Hello</div>
+        <div className="application__left"> 
+        Il reste {this.state.days} jours, {hours} heures, {minutes} minutes, et {seconds} secondes
+         avant la fin de la réduction.
+        </div>
         <div className="application__right">
           <form 
           className="application__right-form" 
