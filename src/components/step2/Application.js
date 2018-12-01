@@ -4,6 +4,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import moment from "moment";
 import 'moment/locale/fr';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class Application extends React.Component {
   constructor(props) {
@@ -15,18 +16,18 @@ class Application extends React.Component {
       diff:"",
       date:moment(),
 
-      days:"",
-      hours:"",
-      minutes:"",
-      seconds:""
+      days:"?",
+      hours:"?",
+      minutes:"?",
+      seconds:"?"
     };
   }
 
   countDown(){
-    let endDate, x, now, beforeEnd, d, h, m, s;
+    let endDate, now, beforeEnd, d, h, m, s;
     endDate = new Date('Jan 5, 2019 00:00:00').getTime();
 
-    x = setInterval(() => {
+    setInterval(() => {
       now = new Date().getTime();
       beforeEnd = endDate - now;
 
@@ -76,11 +77,45 @@ class Application extends React.Component {
         <h1>
           Vous y êtes presque, vous avez juste à remplir ce petit formulaire
         </h1>
+
         <div className="application">
         <div className="application__left"> 
+        <div className="application__left-countdown">
+        <h2>
         Il reste {this.state.days} jours, {hours} heures, {minutes} minutes, et {seconds} secondes
-         avant la fin de la réduction.
+        avant la fin de la réduction.
+        </h2>
         </div>
+        <div className="guarantee">
+      <div className="guarantee__title">
+      <h2>Pas d asterix dans le contrat <span id="italic">On a rien à caché</span></h2>
+      </div>
+      <div className="guarantee__body">
+      <p>Mettez nous à l’épreuve! Si vous ne voyez pas de résultats pendant les deux premiers mois. Nous vous remboursons dans la journée. Sans paperasse. Sans problème.</p>
+      </div>
+      </div>
+
+      <div className="whatsapp">
+      <h4>N hésitez pas à rejoindre notre groupe gratuit </h4>
+      <a href="https://chat.whatsapp.com/HtKHTVKbODu1uUOtPSAaQk" target="blank">
+      <img src="/assets/whatsapp.svg" alt=""/>
+      </a>
+      <p>Vos enfants pourront y recevoir de l aide pour leur devoirs 7/7 <FontAwesomeIcon icon="stroopwafel" /> </p>
+      </div>
+
+      <div className="reason">
+     <p>
+      Faisant partie de ceux qui ne pouvait pas prendre de cours particuliers 
+      j’ai décidé de rendre accessible ceux à quoi je n’avais pas accès. 
+      Mon objectif pour fin 2019 est d’avoir pu aider au moins 50 élèves puis 100 l’année 
+      d’après et pourquoi pas 1000 élèves dans les «  prochaines années. 
+     </p>
+
+     <span>Ce système nous permet de réduire les coûts pour vous ainsi que d'augmenter le salaire à l'heure de nos professeurs.</span>
+      </div>
+        </div>
+
+
         <div className="application__right">
           <form 
           className="application__right-form" 

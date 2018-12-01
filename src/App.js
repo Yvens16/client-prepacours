@@ -4,9 +4,16 @@ import { Switch, Route } from "react-router-dom";
 import Home from './components/landing/Home';
 import Description from './components/sales/Description'
 import NotFound from './components/notFound/NotFound';
+import Thanks from './components/thanks/Thanks';
 // import './main.css';
 import Footer from './components/footer/Footer';
 import Application from './components/step2/Application';
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faStroopwafel)
 
 class App extends Component {
   constructor(props) {
@@ -23,6 +30,7 @@ class App extends Component {
     <Route exact path="/" component={Home} />
     <Route  path="/description" component={Description} />
     <Route  path="/application" component={Application} />
+    <Route  path="/thanks" component={Thanks} />
 
     {/*404 route Always Last */}
       <Route component={NotFound} />
