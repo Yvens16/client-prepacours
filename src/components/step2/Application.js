@@ -5,6 +5,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import moment from "moment";
 import 'moment/locale/fr';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import api from '../../api';
 
 class Application extends React.Component {
   constructor(props) {
@@ -68,8 +69,31 @@ class Application extends React.Component {
   }
   handleSubmit(e){
     e.preventDefault();
-    console.log(this.state)
+
+    api.post('/form', this.state, {
+      onUploadProgress: pe => {
+        console.log('Upload Progress', Math.round(pe.loaded / pe.total * 100) + '%')
+      }
+    })
+    .then(res => {
+      console.log('res', res);
+      if(res.data.msg === 'sucess'){
+        alert("Message sent");
+        this.resetForm();
+      } else if (res.data.msg === 'fail') {
+        alert('Message failed to send.')
+      }
+    })
+    .catch(err =>{
+      console.log('Sorry there was an error ', err)
+    })
+
   }
+
+  resetForm(){
+    document.getElementById('form').reset();
+  }
+
   render() {
     const {name, phone, diff, help, date, days, hours, minutes, seconds}= this.state;
     return (
@@ -82,7 +106,7 @@ class Application extends React.Component {
         <div className="application__left"> 
         <div className="application__left-countdown">
         <h2>
-        Il reste {this.state.days} jours, {hours} heures, {minutes} minutes, et {seconds} secondes
+        Il reste {days} jours, {hours} heures, {minutes} minutes, et {seconds} secondes
         avant la fin de la réduction.
         </h2>
         </div>
@@ -118,8 +142,10 @@ class Application extends React.Component {
 
         <div className="application__right">
           <form 
+          id="form"
           className="application__right-form" 
-          action=""
+          action="/form"
+          method="POST"
           onSubmit={(e => {this.handleSubmit(e)})}
           >
             <label>
@@ -127,6 +153,7 @@ class Application extends React.Component {
               <input 
               type="text" 
               name="name" 
+              id="name"
               value={name}
               placeholder="Jean Dujardin" 
               onChange={(e => {this.handleChange(e)})}
@@ -137,6 +164,7 @@ class Application extends React.Component {
               <input
                 type="tel"
                 name="phone"
+                id="phone"
                 value={phone}
                 pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"
                 placeholder="06 23 73 98 37"
@@ -147,6 +175,7 @@ class Application extends React.Component {
               Dans quelle matière l'élève à t'il des difficultées?
               <input type="text" 
               name="diff" 
+              id="diff"
               value={diff} 
               placeholder="Dites nous tous..." 
               onChange={(e => {this.handleChange(e)})}
@@ -158,7 +187,7 @@ class Application extends React.Component {
                 type="text"
                 name="help"
                 value={help}
-                id=""
+                id="help"
                 placeholder="Dites nous tous..."
                 onChange={(e => {this.handleChange(e)})}
               />
@@ -175,6 +204,7 @@ class Application extends React.Component {
             timeIntervals={15}
             dateFormat="LLL"
             timeCaption="time"
+            id="date"
             >
             </DatePicker>
             </label>

@@ -17,9 +17,11 @@ const Thanks = () => {
       </div> 
     <div className="upsell__plan">
     <h2>Payment plan</h2>
-    <p>Paiement en plusieurs fois pour les stages intensifs.
-    Paiement en 2x ou 3x. Le total du plan de paiement doit être supérieur au prix initial pour pousser les gens à payer en une seul fois.
-    150€ ou 270€ avec le plan de paiement</p>
+    <p>
+    Plus préparation au Brevet des collèges. <br/>
+     Collège: stage en maths 120€ la semaine et 240€ les 2 semaines
+    Paiement en plusieurs fois pour les stages intensifs.
+    Paiement en 2x ou 3x.</p>
     </div>
     </div>
     </main>

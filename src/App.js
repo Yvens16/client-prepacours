@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
+import './main.css';
 
 import Home from './components/landing/Home';
 import Description from './components/sales/Description'
 import NotFound from './components/notFound/NotFound';
 import Thanks from './components/thanks/Thanks';
-// import './main.css';
 import Footer from './components/footer/Footer';
 import Application from './components/step2/Application';
 
