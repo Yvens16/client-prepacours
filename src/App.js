@@ -35,9 +35,7 @@ class App extends Component {
     {/*404 route Always Last */}
       <Route component={NotFound} />
       </Switch>
-      {/*
         <Footer/> 
-       */}
       </div>
     );
   }

@@ -4,7 +4,7 @@ import './_thanks.scss';
 
 const Thanks = () => {
   return (
-    <main>
+    <main className="t">
     <div className="thanks">
     <h1>Merci vous faites parti du peu de gens qui sont prêt à 
     faire ce qu il faut pour changer les choses. BRAVO!</h1>
