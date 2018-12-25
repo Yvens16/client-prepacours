@@ -35,8 +35,12 @@ const Description = () => {
           <Link to="/" className="split__right-cta">
             En savoir plus
             </Link>
-            <a  href="/" className="hello">Hello how are you</a>
             <span className="hello__by">Show me</span>
+            <div className="direction">
+              <Link to='/'>Home</Link>
+              <Link to='/application'>En savoir plus</Link>
+              <Link to='/thanks'>Thanks</Link>
+            </div>
             </div>
       </div>
     </main>

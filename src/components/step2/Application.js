@@ -1,5 +1,6 @@
 import React from "react";
-import './_application.scss'
+import './_application.scss';
+import { Link } from 'react-router-dom';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import moment from "moment";
@@ -212,7 +213,12 @@ class Application extends React.Component {
           </form>
          
         </div>  
-        </div>      
+        </div>   
+        <div className="direction">
+        <Link to='/'>Home</Link>
+        <Link to='/description'>Description</Link>
+        <Link to='/thanks'>Thanks</Link>
+      </div>   
       </main>
     );
   }

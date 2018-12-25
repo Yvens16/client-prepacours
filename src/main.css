@@ -9,6 +9,63 @@ html {
   font-weight: 700;
   font-style: normal; }
 
+.home .logo {
+  background-color: #fff;
+  border-radius: 10px; }
+
+.hero {
+  height: 60vh;
+  background-color: #2980b9;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center; }
+  .hero__title {
+    color: #fff;
+    margin-bottom: 5vh; }
+
+.value {
+  margin-bottom: 10vh; }
+  .value__title {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    margin-bottom: 5vh; }
+  .value__stacking {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center; }
+
+.guarantee__title {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center; }
+
+.guarantee h2 {
+  margin-bottom: 2vh; }
+
+.guarantee__body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center; }
+  .guarantee__body p {
+    max-width: 500px;
+    margin: auto; }
+
 .footer {
   height: 10vh;
   background-color: #0c2461;
@@ -93,7 +150,7 @@ html {
   display: flex; }
   .application__left {
     -webkit-box-flex: 0;
-            flex: 0 0 40%;
+            flex: 0 0 60%;
     background-color: #c0392b; }
   .application__right {
     display: -webkit-box;
@@ -101,7 +158,7 @@ html {
     -webkit-box-align: center;
             align-items: center;
     -webkit-box-flex: 0;
-            flex: 0 0 60%;
+            flex: 0 0 40%;
     background-color: #8e44ad; }
     .application__right-form {
       height: 100%;
@@ -113,3 +170,6 @@ html {
       -webkit-box-pack: space-evenly;
               justify-content: space-evenly;
       background-color: #ecf0f1; }
+
+.t {
+  height: 90vh; }

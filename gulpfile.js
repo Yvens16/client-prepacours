@@ -22,12 +22,12 @@ function prefix() {
 };
 
 function serverPublicClean(){
-  return del('../server/public/*', { force: true })
+  return del('../server-prepacours/public/*', { force: true })
 };
 
 function clientBuildCopy(){
   return src('./build/**/*')
-  .pipe(dest('../server/public'))
+  .pipe(dest('../server-prepacours/public'))
 };
 
 exports.css = series(compileSass, prefix);

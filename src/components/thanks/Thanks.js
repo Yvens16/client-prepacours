@@ -23,6 +23,11 @@ const Thanks = () => {
     Paiement en plusieurs fois pour les stages intensifs.
     Paiement en 2x ou 3x.</p>
     </div>
+    <div className="direction">
+      <Link to='/'>Home</Link>
+      <Link to='/application'>En savoir plus</Link>
+      <Link to='/description'>Description</Link>
+    </div>
     </div>
     </main>
   )

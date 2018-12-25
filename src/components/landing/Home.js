@@ -39,6 +39,8 @@ const Home = () => {
 
       <div className="direction">
       <Link to='/application'>En savoir plus</Link>
+      <Link to='/description'>Description</Link>
+      <Link to='/thanks'>Thanks</Link>
       </div>
     </main>
   );
