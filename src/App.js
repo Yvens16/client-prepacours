@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import './main.css';
 
 import Home from './components/landing/Home';
+import NavBar from './components/navigation/NavBar';
 import Description from './components/sales/Description'
 import NotFound from './components/notFound/NotFound';
 import Thanks from './components/thanks/Thanks';
@@ -14,7 +15,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faStroopwafel)
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -26,6 +26,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <NavBar/>
         <Switch>
     <Route exact path="/" component={Home} />
     <Route  path="/description" component={Description} />

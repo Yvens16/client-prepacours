@@ -173,3 +173,32 @@ html {
 
 .t {
   height: 90vh; }
+
+.navigation {
+  height: 8vh; }
+  .navigation ul {
+    top: 50%;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+            justify-content: space-evenly; }
+    .navigation ul li {
+      list-style: none; }
+      .navigation ul li a {
+        text-decoration: none; }
+      .navigation ul li #reservation {
+        display: -webkit-box;
+        display: flex;
+        background-image: -webkit-linear-gradient(left, #00A0F5, #6926C5, #6926C5);
+        background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5);
+        width: 140px;
+        border-radius: 12px;
+        height: 25px;
+        display: block; }
+        .navigation ul li #reservation button {
+          padding: 0px;
+          vertical-align: middle; }
+        .navigation ul li #reservation a {
+          color: white; }

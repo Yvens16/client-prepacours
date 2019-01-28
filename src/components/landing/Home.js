@@ -5,7 +5,6 @@ import './_home.scss';
 const Home = () => {
   return (
     <main className="home"> 
-    <span className="logo"> Prépa-Cours </span>   
     <div className="hero">
     <div className="hero__title">
       <h1>Augmenter sa moyenne en maths d’au moins 3 point et plus.</h1>
@@ -34,6 +33,11 @@ const Home = () => {
       </div>
       <div className="guarantee__body">
       <p>Mettez nous à l’épreuve! Si vous ne voyez pas de résultats pendant les deux premiers mois. Nous vous remboursons dans la journée. Sans paperasse. Sans problème.</p>
+      </div>
+      <div className="fb-share-button" data-href="https://www.facebook.com/fabuno/" data-layout="button_count" data-size="small" data-mobile-iframe="true">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Ffabuno%2F&amp;src=sdkpreparse" className="fb-xfbml-parse-ignore">
+      Partager
+      </a>
       </div>
       </div>
 
