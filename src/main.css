@@ -175,6 +175,10 @@ html {
   height: 90vh; }
 
 .navigation {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
   height: 8vh; }
   .navigation ul {
     top: 50%;
