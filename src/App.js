@@ -10,34 +10,53 @@ import Thanks from './components/thanks/Thanks';
 import Footer from './components/footer/Footer';
 import Application from './components/step2/Application';
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStroopwafel } from '@fortawesome/free-solid-svg-icons';
+import SideDrawer from "./components/sideDrawer/SideDrawer";
+import Backdrop from './components/backdrop/Backdrop';
 
 library.add(faStroopwafel)
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      users: []
+      sideDrawerOpen: false,
     };
   }
 
-  render() {
-    return (
-      <div className="App">
-      <NavBar/>
-        <Switch>
-    <Route exact path="/" component={Home} />
-    <Route  path="/description" component={Description} />
-    <Route  path="/application" component={Application} />
-    <Route  path="/thanks" component={Thanks} />
+  drawerToggleClickHandler = () => {
+    this.setState((prevState) => {
+      return {sideDrawerOpen: !prevState.sideDrawerOpen};
+    });
+  };
+  backdropClickHandler = () => {
+    this.setState({
+      sideDrawerOpen: false,
+    });
+  };
 
-    {/*404 route Always Last */}
-      <Route component={NotFound} />
+  render() {
+    let backdrop;
+
+    if(this.state.sideDrawerOpen) {
+      backdrop = <Backdrop click={this.backdropClickHandler} />
+    }
+    return (
+    <div className="App" style={{height: '100%'}}>
+      <NavBar drawerClickHandler={this.drawerToggleClickHandler}/>
+      <SideDrawer show={this.state.sideDrawerOpen}/>
+      {backdrop}
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route  path="/description" component={Description} />
+        <Route  path="/application" component={Application} />
+        <Route  path="/thanks" component={Thanks} />
+        {/*404 route Always Last */}
+          <Route component={NotFound} />
       </Switch>
-        <Footer/> 
-      </div>
+      <Footer/> 
+    </div>
     );
   }
 }

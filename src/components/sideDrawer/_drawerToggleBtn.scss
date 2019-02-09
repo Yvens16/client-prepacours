@@ -1,0 +1,22 @@
+.toggle-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+
+  &__line{
+    width: 30px;
+    height: 2px;
+    background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5);
+  }
+}
+
+.toggle-btn:focus {
+  outline: none;  
+}
