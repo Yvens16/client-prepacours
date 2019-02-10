@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import logo from '../logo1.svg';
 import { Link } from "react-router-dom";
 import '../sideDrawer/DrawerToggleBtn';
 import "./_navbar.scss";
@@ -12,7 +12,7 @@ const Navbar = props => (
       <DrawerToggleBtn click={props.drawerClickHandler} />
     </div>
     <div className="toolbar__navigation-logo">
-      <Link to='/'>Prepacours</Link>
+      <Link to='/'><img src={logo} style={{height: '100px', width:'160px', transform: 'translateY(8%)'}} alt='Logo prepacours'/></Link>
       </div>
       <div className="toolbar__navigation-spacer"/>
       <div className="toolbar__navigation-items">
@@ -31,7 +31,7 @@ const Navbar = props => (
       </ul>
     </div>
     </nav>
-  </header>
+          </header>
 );
 
 export default Navbar;

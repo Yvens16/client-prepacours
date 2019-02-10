@@ -10,11 +10,11 @@ const SideDrawer = props => {
   return (
     <nav className={drawerClass}>
       <ul>
-        <button>
           <li>
+        <button>
             <a href="tel:+33627269473">06 27 26 94 73</a>
-          </li>
         </button>
+          </li>
         <li>
           <div
             className="fb-share-button"

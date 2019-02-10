@@ -8,24 +8,42 @@
   width: 70%;
   max-width: 400px;
   z-index: 200;
+  background-image: linear-gradient(to top, #00A0F5, #6926C5, #6926C5);
 
   ul {
-    height: 100%;
+    height: 50%;
     list-style: none;
     display: flex;
     flex-direction: column;
+    justify-content: evenly;
     justify-content: center;
 
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 260px;
+      margin: 10px 0;
+      height: 50px;
 
+      .fb-share-button {
+        iframe {
+          width:107px;
+          height: 40px;
+        } 
+      }
+    }
     button {
-      background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5);
+      background: none;
     }
   }
 
   a {
-    color: white;
+    color: white;;
     text-decoration: none;
     font-size: 1.2rem;
+    text-align: center;
+    white-space: nowrap;
   }
   a:hover,
   a:active {
