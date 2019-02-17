@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../logo1.svg';
+import logo from '../icons/logo1.svg';
 import { Link } from "react-router-dom";
 import '../sideDrawer/DrawerToggleBtn';
 import "./_navbar.scss";

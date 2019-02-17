@@ -14,7 +14,7 @@ html {
   border-radius: 10px; }
 
 .hero {
-  height: 60vh;
+  height: 100vh;
   background-color: #2980b9;
   display: -webkit-box;
   display: flex;
@@ -25,9 +25,12 @@ html {
   .hero__title {
     color: #fff;
     margin-bottom: 5vh; }
+    .hero__title #line-through {
+      text-decoration: line-through;
+      color: grey; }
 
-.value {
-  margin-bottom: 10vh; }
+/* .value {
+  margin-bottom: 10vh; } */
   .value__title {
     display: -webkit-box;
     display: flex;
@@ -205,8 +208,14 @@ html {
       display: -webkit-box;
       display: flex; }
       .toolbar__navigation-items ul button {
+        width: 140px;
+        height: 25px;
+        border-radius: 30px;
         background-image: -webkit-linear-gradient(left, #00A0F5, #6926C5, #6926C5);
         background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5); }
+      .toolbar__navigation-items ul .fb-share-button {
+        -webkit-transform: translateY(21%);
+                transform: translateY(21%); }
       .toolbar__navigation-items ul li {
         padding: 0 0.5rem; }
     .toolbar__navigation-items a {
@@ -260,6 +269,8 @@ html {
   width: 70%;
   max-width: 400px;
   z-index: 200;
+  background-image: -webkit-linear-gradient(bottom, #00A0F5, #6926C5, #6926C5);
+  background-image: linear-gradient(to top, #00A0F5, #6926C5, #6926C5);
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: -webkit-transform 0.3s ease-out;
@@ -267,22 +278,38 @@ html {
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; }
   .side-drawer ul {
-    height: 100%;
+    height: 50%;
     list-style: none;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
+    -webkit-box-pack: evenly;
+            justify-content: evenly;
     -webkit-box-pack: center;
             justify-content: center; }
+    .side-drawer ul li {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+              align-items: center;
+      width: 260px;
+      margin: 10px 0;
+      height: 50px; }
+      .side-drawer ul li .fb-share-button iframe {
+        width: 107px;
+        height: 40px; }
     .side-drawer ul button {
-      background-image: -webkit-linear-gradient(left, #00A0F5, #6926C5, #6926C5);
-      background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5); }
+      background: none; }
   .side-drawer a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    text-align: center;
+    white-space: nowrap; }
   .side-drawer a:hover,
   .side-drawer a:active {
     color: green; }

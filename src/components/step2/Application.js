@@ -73,7 +73,7 @@ class Application extends React.Component {
 
     api.post('/form', this.state, {
       onUploadProgress: pe => {
-        console.log('Upload Progress', Math.round(pe.loaded / pe.total * 100) + '%')
+        // console.log('Upload Progress', Math.round(pe.loaded / pe.total * 100) + '%')
       }
     })
     .then(res => {

@@ -19,59 +19,106 @@ html {
 }
 
 .hero{
-  height: 60vh;
+  height: 92vh;
   background-color: #2980b9;
-
   display: flex;
   justify-content: center;
   align-items: center;
 
-  &__title{
+  &__title {
+    flex: 0 1 50%;
     color: #fff;
     margin-bottom: 5vh;
     
+    #line-through {
+      text-decoration: line-through;
+      color: grey;
+    }
   }
  
 }
 
-.value{
-
-  margin-bottom: 10vh;
-  &__title{
+.value {
+  border: 5px dashed violet;
+  height: auto;
+  padding: 50px;
+  // height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 5vh;
+
+    button {
+      margin-top: 10px;
+      vertical-align: middle;
+      color: white;
+      font-size: 40px;
+      height: 60px;
+      width: 350px;
+      border-radius: 30px;
+      background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5);
+    }    
   }
 
-  &__stacking{
+  &__cols {
+    height: 80vh;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &-in {
+      width: 50%;
+    }
   }
 
 }
 
-.guarantee{
+// .guarantee {
 
-  &__title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  h2{
-    margin-bottom: 2vh;
-  }
+//   &__title{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+//   h2{
+//     margin-bottom: 2vh;
+//   }
 
-  &__body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+//   &__body{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
 
-    p{
-      max-width: 500px;
-      margin: auto;
-    }
+//     p{
+//       max-width: 500px;
+//       margin: auto;
+//     }
+//   }
+  
+// }
+
+.reservation {
+  border: 2px dashed red;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+
+  &__btn {
+    border: 2px solid green;
   }
   
+  #center {
+    border: 2px dotted blue;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
 }

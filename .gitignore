@@ -4,6 +4,7 @@
 
 #Entry point for all server queries
 src/.api.js
+src/.Test.js
 # dependencies
 /node_modules
 /.pnp
