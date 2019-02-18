@@ -1,5 +1,7 @@
 import React from "react";
 import api from '../../../api';
+const Swal = require('sweetalert2')
+
 
 export default class Form extends React.Component {
   handleChange(event){
@@ -21,7 +23,11 @@ export default class Form extends React.Component {
         const progress =  Math.round(pe.loaded / pe.total * 100);
         console.log('Upload Progress', Math.round(pe.loaded / pe.total * 100) + '%')
        if (progress === 100) {
-        alert('Email sent');
+        Swal.fire(
+        'Good job!',
+        'Votre mail à été envoyer',
+        'success'
+        )
         this.refs.form.reset();
        }
       }
