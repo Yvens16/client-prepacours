@@ -8,6 +8,8 @@ import presentation from "../icons/presentation.svg";
 import success from "../icons/success.svg";
 import goal from "../icons/goal.svg";
 import euro from "../icons/euro.svg";
+import slack from '../icons/slack.svg';
+import children from '../icons/children.svg';
 
 export default class Home extends React.Component{
   constructor(props) {
@@ -145,7 +147,7 @@ export default class Home extends React.Component{
   
         <div className="reservation">
           <div className="reservation__btn">
-            <Form ref='child'>
+            <Form ref='child' query='/form'>
               <input type="text" name="name" id="name" placeholder='Nom'
                 onChange={e => this.onChildChange(e)}
               />
@@ -159,6 +161,62 @@ export default class Home extends React.Component{
                 </div>
             </Form>
           </div>
+        </div>
+
+        <div className="collab">
+          <div className="collab__logo">
+            <div className="collab__logo-logo">
+            <img
+            src={slack}
+            style={{ height: "100px", width: "100px" }}
+            alt=""
+          />
+            </div>
+            <div className="collab__logo-text">Rejoignez Notre groupe Slack</div>
+          </div>
+          <div className="collab__text">
+            <ul>
+              <li>- Les élèves peuvent s’entraider et pourquoi pas y trouver un groupe de révisions. </li>
+              <br/>
+              <li>- Nos professeurs sont également présent pour fournir une aide 24h/24 gratuitement. Si il est bloqué sur un devoir, un exposé, parfois l’on a besoin juste d’un petit coup de pouce peut sauver une soirée.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="faq">
+          <h1>Questions fréquentes</h1>
+          <ul>
+            <li>
+              <h2>Où se passent exactement les cours ?</h2>
+              <p>Les cours se déroulent chez nos professeurs, chez un élève, dans les locaux de nos partenaires. (Mairie, centre aéré etc...)</p>
+            </li>
+            <li>
+              <h2>Ils y a t&apos;ils des cours pendant les vacances scolaires ?</h2>
+              <p>Si le professeur et les élèves le souhaitent, c&apos;est tout à fais possible.
+              N&apos;hésitez pas à en discuter quelques jours avant les vacances.
+              Nous organisons aussi des stages de perfectionnement pour ceux qui le souhaitent.</p>
+            </li>
+            <li>
+              <h2>Les groupes sont t&apos;ils homogène ?</h2>
+              <p>Oui, le maximum est fait pour regrouper les élèves de la même tranche d&apos;âge et favoriser de bons résultats.</p>
+            </li>
+            <li>
+              <h2>Que faire si je dois manquer un cours ?</h2>
+              <p>Assurer vous de prévenir le professeurs au moins deux jours à l&apos;avance. et bien sûr, vous ne serez pas facturer.</p>
+            </li>
+            <li>
+              <h2>Est t&apos;il possible de faire un cours de groupe à mon domicile ?</h2>
+              <p>Oui bien sûr, il suffit que le professeur et les autres élèves donnent leur accord. Nous nous chargerons de faire les demandes.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div className="children">
+        <img
+        src={children}
+        style={{ height: "auto", width: "100%" }}
+        alt=""
+      />
         </div>
   
         <div className="direction">

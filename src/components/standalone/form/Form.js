@@ -18,7 +18,7 @@ export default class Form extends React.Component {
       [name]: '',
     })
 
-    api.post('/form', this.state, {
+    api.post(this.props.query, this.state, {
       onUploadProgress: pe => {
         const progress =  Math.round(pe.loaded / pe.total * 100);
         console.log('Upload Progress', Math.round(pe.loaded / pe.total * 100) + '%')

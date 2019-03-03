@@ -11,7 +11,7 @@ import Footer from './components/footer/Footer';
 import Application from './components/step2/Application';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwe someIcon } from '@fortawesome/react-fontawesome';
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons';
 import SideDrawer from "./components/sideDrawer/SideDrawer";
 import Backdrop from './components/backdrop/Backdrop';

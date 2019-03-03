@@ -122,3 +122,54 @@ html {
     margin-top: 20px;
   }
 }
+
+.collab {
+  // background-color: blue;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__logo {
+    // background-color: red;
+    width: 30%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__text {
+    // background-color: green;
+    width: 30%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+
+    ul {
+      list-style-type: none;
+    }
+  }
+}
+
+.faq {
+  height: 50vh;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+.children {
+  display: flex;
+  justify-content: center;
+}

@@ -14,7 +14,7 @@ html {
   border-radius: 10px; }
 
 .hero {
-  height: 100vh;
+  height: 92vh;
   background-color: #2980b9;
   display: -webkit-box;
   display: flex;
@@ -23,14 +23,27 @@ html {
   -webkit-box-align: center;
           align-items: center; }
   .hero__title {
+    -webkit-box-flex: 0;
+            flex: 0 1 50%;
     color: #fff;
     margin-bottom: 5vh; }
     .hero__title #line-through {
       text-decoration: line-through;
       color: grey; }
 
-/* .value {
-  margin-bottom: 10vh; } */
+.value {
+  border: 5px dashed violet;
+  height: auto;
+  padding: 50px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center; }
   .value__title {
     display: -webkit-box;
     display: flex;
@@ -39,35 +52,47 @@ html {
     -webkit-box-align: center;
             align-items: center;
     margin-bottom: 5vh; }
-  .value__stacking {
+    .value__title button {
+      margin-top: 10px;
+      vertical-align: middle;
+      color: white;
+      font-size: 40px;
+      height: 60px;
+      width: 350px;
+      border-radius: 30px;
+      background-image: -webkit-linear-gradient(left, #00A0F5, #6926C5, #6926C5);
+      background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5); }
+  .value__cols {
+    height: 80vh;
+    flex-wrap: wrap;
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
             justify-content: center;
     -webkit-box-align: center;
             align-items: center; }
+    .value__cols-in {
+      width: 50%; }
 
-.guarantee__title {
+.reservation {
+  border: 2px dashed red;
+  height: 40vh;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
           justify-content: center;
   -webkit-box-align: center;
-          align-items: center; }
-
-.guarantee h2 {
-  margin-bottom: 2vh; }
-
-.guarantee__body {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center; }
-  .guarantee__body p {
-    max-width: 500px;
-    margin: auto; }
+          align-items: center;
+  color: red; }
+  .reservation__btn {
+    border: 2px solid green; }
+  .reservation #center {
+    border: 2px dotted blue;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    margin-top: 20px; }
 
 .footer {
   height: 10vh;
