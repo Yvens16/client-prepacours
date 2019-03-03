@@ -5,13 +5,15 @@ import './main.css';
 import App from './App';
 // import Test from './Test';
 // import Form from '../src/components/standalone/form/Form';
+// import Clock from '../src/components/standalone/Clock';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
 
   <BrowserRouter>
-   <App />
-   {/*<Test/>*/}
+  <App />
+  {/*<Clock/>*/}
+  {/*  <Test/>*/}
   </BrowserRouter>,
   document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Form from '../standalone/form/Form';
+import Form from '../standalone/Form';
 import "./_home.scss";
 import navigation from "../icons/navigation.svg";
 import running from "../icons/running.svg";
@@ -153,7 +153,7 @@ export default class Home extends React.Component{
               />
               <input type="text" name="firstName" id="firstName" placeholder='Prénom' 
               onChange={e => this.onChildChange(e)}/>
-              <input type="tel" name="phone" id="phone" placeholder='Numéro de téléphoone' 
+              <input type="tel" name="phone" id="phone" placeholder='0627254895' 
               onChange={e => this.onChildChange(e)}/>
               <br/>
                 <div id='center'>

@@ -1,6 +1,6 @@
 import React from "react";
-import api from '../../../api';
-const Swal = require('sweetalert2')
+import api from '../../api';
+const Swal = require('sweetalert2');
 
 
 export default class Form extends React.Component {

@@ -11,6 +11,7 @@
     "body-parser": "^1.18.3",
     "dotenv": "^6.2.0",
     "moment": "^2.22.2",
+    "prop-types": "^15.7.2",
     "react": "^16.7.0",
     "react-datepicker": "^1.8.0",
     "react-dom": "^16.6.3",
@@ -20,6 +21,8 @@
     "sweetalert2": "^8.2.1"
   },
   "scripts": {
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,6 +44,7 @@
     "gulp-autoprefixer": "^6.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sass-glob": "^1.0.9",
-    "node-sass": "^4.10.0"
+    "node-sass": "^4.10.0",
+    "react-styleguidist": "^9.0.1"
   }
 }
