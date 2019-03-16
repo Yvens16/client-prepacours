@@ -1,3 +1,4 @@
+@import "../../sass/abstracts/variables";
 * {
   margin: 0;
   padding: 0;
@@ -18,26 +19,152 @@ html {
   }
 }
 
-.hero{
-  height: 92vh;
-  background-color: #2980b9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (max-width: $phone) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    margin-top: 60px;
+    padding: 18px;
 
-  &__title {
-    flex: 0 1 50%;
-    color: #fff;
-    margin-bottom: 5vh;
-    
-    #line-through {
-      text-decoration: line-through;
-      color: grey;
+    h1 {
+      color: #6926C5;
+      font-size: 24px;
+    }
+
+    &__title {
+      h3 {
+        color: rgba(87, 41, 151, 0.739);
+        font-size: 12px;
+      }
+    }
+
+    button {
+      margin-top: 10px; 
+      text-align: center;
+      order: 3;
+      width: 150px;
+      height: 30px;
+      font-size: 15px;
+      border-radius: 22px;
+      background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5);
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    &__svg {
+      order: 3;
+      img {
+        height: auto;
+        width: 360px;
+      }
     }
   }
- 
 }
 
+@media screen and ( min-width:$phone) and (max-width:$tablet) {
+  .hero {
+    width: $tablet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    
+    h1 {
+      font-size: 28px;
+      color: #6926C5;
+    }
+    
+    &__title {
+      width: 500px;
+      margin: auto;
+      h3 {
+        font-size: 14px;
+        color: rgba(87, 41, 151, 0.739);
+      }
+    }
+
+    button {
+      margin-top: 10px; 
+      text-align: center;
+      order: 3;
+      width: 150px;
+      height: 30px;
+      font-size: 15px;
+      border-radius: 22px;
+      background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5);
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    &__svg {
+      order: 3;
+      img {
+        height: auto;
+        width: 360px;
+      }
+    }
+  }
+}
+
+@media(min-width: $tablet-pro) {
+  .hero {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    h1 {
+      font-size: 28px;
+      color: #6926C5;
+    }
+    
+    &__title {
+      margin-left: 30px;
+      text-align: center;
+      width: 600px;
+      h3 {
+        font-size: 14px;
+        color: rgba(87, 41, 151, 0.739);
+      }
+    }
+
+    button {
+      transform: translate(-326px, 70px);
+      margin-top: 30px; 
+      text-align: center;
+      order: 3;
+      width: 150px;
+      height: 30px;
+      font-size: 13px;
+      border-radius: 22px;
+      background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5);
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    &__svg {
+      transform: translateX(-40px);
+      order: 3;
+      img {
+        height: auto;
+        width: 460px;
+      }
+    }
+  }
+}
 .value {
   border: 5px dashed violet;
   height: auto;
@@ -57,7 +184,7 @@ html {
       margin-top: 10px;
       vertical-align: middle;
       color: white;
-      font-size: 40px;
+      font-size: 32px;
       height: 60px;
       width: 350px;
       border-radius: 30px;
@@ -79,30 +206,6 @@ html {
 
 }
 
-// .guarantee {
-
-//   &__title{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
-//   h2{
-//     margin-bottom: 2vh;
-//   }
-
-//   &__body{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     p{
-//       max-width: 500px;
-//       margin: auto;
-//     }
-//   }
-  
-// }
-
 .reservation {
   border: 2px dashed red;
   height: 40vh;
@@ -112,6 +215,12 @@ html {
   color: red;
 
   &__btn {
+    Form {
+      background-color: red;
+      width: 600px;
+    }
+    width: 600px;
+    height: 200px;
     border: 2px solid green;
   }
   

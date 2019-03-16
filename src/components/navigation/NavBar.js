@@ -17,7 +17,6 @@ const Navbar = props => (
       <div className="toolbar__navigation-spacer" />
       <div className="toolbar__navigation-items">
         <ul>
-          <li><a href="tel:+33627269473">06 27 26 94 73</a></li>
           <li>
             <div className="fb-share-button" data-href="https://www.facebook.com/fabuno/" data-layout="button_count" data-size="small" data-mobile-iframe="true">
               <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Ffabuno%2F&amp;src=sdkpreparse" className="fb-xfbml-parse-ignore">

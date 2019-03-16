@@ -10,6 +10,7 @@ import goal from "../icons/goal.svg";
 import euro from "../icons/euro.svg";
 import slack from '../icons/slack.svg';
 import children from '../icons/children.svg';
+import hero from '../icons/hero__svg.svg';
 
 export default class Home extends React.Component{
   constructor(props) {
@@ -30,15 +31,22 @@ export default class Home extends React.Component{
       <main className="home">
         <div className="hero">
           <div className="hero__title">
-            <h1>Cours de maths intensifs en petits groupes.</h1>
+            <h1>Cours de maths intensifs en petits groupes. 25€/h</h1>
             <h3>
-              Nos cours sont créer pour les élèves déterminés à{" "}
+             {/*} Nos cours sont créer pour les élèves déterminés à{" "}
               <span id="line-through">remonter la pente</span> atteindre
-              l&apos;éxellence.
+    l&apos;éxellence. */}
+            Laissez vous tenter par l&apos;exellence.
+            Un cours de soutien ne même pas à la réussite.
+            Seul une préparation intensive et un état d&apos;ésprit à toute épreuve le peut.
             </h3>
           </div>
+          <button><Link className='a' to='/application'>Réserver un cours</Link></button>
           <div className="hero__svg">
-            <h1>AyyyyaaaaaaMock</h1>
+          <img
+          src={hero}
+          alt="Svg of people reading books"
+        />
           </div>
         </div>
   
@@ -166,11 +174,15 @@ export default class Home extends React.Component{
         <div className="collab">
           <div className="collab__logo">
             <div className="collab__logo-logo">
+            <a target="_blank"
+            rel="noopener noreferrer" 
+            href="https://join.slack.com/t/prepacours/shared_invite/enQtNTcxNjg1NzY4NzIxLTQzNGE4MzEzNWM3ZjZjMTdkZDM3NGFiZDYwYzUxOTlhN2RkYWZhNWQ0MmVlYmNmNWNhM2I5NTM0ZDliZWNkZDg">
             <img
             src={slack}
             style={{ height: "100px", width: "100px" }}
             alt=""
-          />
+                />
+            </a>
             </div>
             <div className="collab__logo-text">Rejoignez Notre groupe Slack</div>
           </div>
