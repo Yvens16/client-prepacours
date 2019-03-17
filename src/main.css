@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   border: 0;
@@ -15,7 +15,6 @@ html {
 
 .hero {
   height: 92vh;
-  background-color: #2980b9;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -25,7 +24,7 @@ html {
   .hero__title {
     -webkit-box-flex: 0;
             flex: 0 1 50%;
-    color: #fff;
+    color: black;
     margin-bottom: 5vh; }
     .hero__title #line-through {
       text-decoration: line-through;
@@ -85,7 +84,12 @@ html {
           align-items: center;
   color: red; }
   .reservation__btn {
+    width: 600px;
+    height: 200px;
     border: 2px solid green; }
+    .reservation__btn Form {
+      background-color: red;
+      width: 600px; }
   .reservation #center {
     border: 2px dotted blue;
     display: -webkit-box;
@@ -93,6 +97,63 @@ html {
     -webkit-box-pack: center;
             justify-content: center;
     margin-top: 20px; }
+
+.collab {
+  height: 60vh;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center; }
+  .collab__logo {
+    width: 30%;
+    height: 70%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column; }
+  .collab__text {
+    width: 30%;
+    height: 70%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    padding: 20px; }
+    .collab__text ul {
+      list-style-type: none; }
+
+.faq {
+  height: 50vh;
+  padding: 50px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+  .faq ul {
+    list-style-type: none; }
+
+.children {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center; }
 
 .footer {
   height: 10vh;
@@ -172,32 +233,22 @@ html {
     background-color: #8e44ad;
     display: none; }
 
-.application {
-  height: 100vh;
+.formStep {
+  margin-top: 10vh;
+  height: 90vh;
   display: -webkit-box;
-  display: flex; }
-  .application__left {
-    -webkit-box-flex: 0;
-            flex: 0 0 60%;
-    background-color: #c0392b; }
-  .application__right {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-            align-items: center;
-    -webkit-box-flex: 0;
-            flex: 0 0 40%;
-    background-color: #8e44ad; }
-    .application__right-form {
-      height: 100%;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-              flex-direction: column;
-      -webkit-box-pack: space-evenly;
-              justify-content: space-evenly;
-      background-color: #ecf0f1; }
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center; }
+  .formStep .formulaire {
+    border: 3px solid red;
+    width: 100%;
+    height: 100%; }
+    .formStep .formulaire input {
+      width: 100%;
+      height: 100%; }
 
 .t {
   height: 90vh; }
@@ -221,7 +272,7 @@ html {
     .toolbar__navigation-logo a {
       color: black;
       text-decoration: none;
-      font-size: 1.5rem;
+      font-size: 1rem;
       margin-left: 1rem; }
     .toolbar__navigation-spacer {
       -webkit-box-flex: 1;
@@ -354,4 +405,4 @@ html {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.3);
-  z-index: 100; }
+  z-index: 100; } */
