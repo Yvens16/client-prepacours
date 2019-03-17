@@ -1,6 +1,7 @@
+@import "../../sass/abstracts/variables";
 .footer {
   height: 10vh;
-  background-color: #0c2461;
+  background-color: $main-violet;
   bottom: 0;
   color: #fff;
 
@@ -8,9 +9,17 @@
   justify-content: center;
   align-items: center;
 
-  &__link{
-    text-decoration: none;
-    color: #0077B5;
-    margin-left: 5px;
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    li {
+      margin-left: 5px;
+      margin-left: 3vw;
+      a {
+      text-decoration: none;
+      color: #fff;
+      }
+    }
   }
 }

@@ -52,14 +52,14 @@ export default class Home extends React.Component{
   
         <div className="value">
           <div className="value__title">
-            <button className="value__title-btn">Vos avantages</button>
+            <h1>Vos avantages</h1>
           </div>
           <div className="value__cols">
             <div className="value__cols-in">
               <img
                 src={presentation}
                 style={{ height: "100px", width: "100px" }}
-                alt=""
+                alt="Pégagogie"
               />
               <h2>Pédagogie</h2>
               <p>
@@ -71,7 +71,7 @@ export default class Home extends React.Component{
               <img
                 src={navigation}
                 style={{ height: "100px", width: "100px" }}
-                alt=""
+                alt="Session d'orientation"
               />
               <h2>Sessions d&apos;orientation</h2>
               <p>Accès à des évenement d&apos;orientation en privilégiér.</p>
@@ -80,7 +80,7 @@ export default class Home extends React.Component{
               <img
                 src={euro}
                 style={{ height: "100px", width: "100px" }}
-                alt=""
+                alt="Prix"
               />
               <h2>Prix</h2>
               <p>15€/h soit 3 fois moins chère qu&apos;un cours classique</p>
@@ -89,7 +89,7 @@ export default class Home extends React.Component{
               <img
                 src={running}
                 style={{ height: "100px", width: "100px" }}
-                alt=""
+                alt="Pas d'engagement"
               />
               <h2>Pas d&apos;engagement</h2>
               <p>
@@ -120,39 +120,7 @@ export default class Home extends React.Component{
             </div>
           </div>
         </div>
-  
-        {/*<div className="guarantee">
-          <div className="guarantee__title">
-            <h2>
-              Pas d&apos;asterix dans le contrat{" "}
-              <span id="italic">On a rien à caché</span>
-            </h2>
-          </div>
-          <div className="guarantee__body">
-            <p>
-              Mettez nous à l’épreuve! Si vous ne voyez pas de résultats pendant
-              les deux premiers mois. Nous vous remboursons dans la journée. Sans
-              paperasse. Sans problème.
-            </p>
-          </div>
-          <div
-            className="fb-share-button"
-            data-href="https://www.facebook.com/fabuno/"
-            data-layout="button_count"
-            data-size="small"
-            data-mobile-iframe="true"
-          >
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Ffabuno%2F&amp;src=sdkpreparse"
-              className="fb-xfbml-parse-ignore"
-            >
-              Partager
-            </a>
-          </div>
-    </div>*/}
-  
+
         <div className="reservation">
           <div className="reservation__btn">
             <Form ref='child' query='/form'>
@@ -161,7 +129,7 @@ export default class Home extends React.Component{
               />
               <input type="text" name="firstName" id="firstName" placeholder='Prénom' 
               onChange={e => this.onChildChange(e)}/>
-              <input type="tel" name="phone" id="phone" placeholder='0627254895' 
+              <input type="tel" name="phone" id="phone" placeholder='06 27 25 48 95' 
               onChange={e => this.onChildChange(e)}/>
               <br/>
                 <div id='center'>
@@ -179,7 +147,6 @@ export default class Home extends React.Component{
             href="https://join.slack.com/t/prepacours/shared_invite/enQtNTcxNjg1NzY4NzIxLTQzNGE4MzEzNWM3ZjZjMTdkZDM3NGFiZDYwYzUxOTlhN2RkYWZhNWQ0MmVlYmNmNWNhM2I5NTM0ZDliZWNkZDg">
             <img
             src={slack}
-            style={{ height: "100px", width: "100px" }}
             alt=""
                 />
             </a>
@@ -188,9 +155,9 @@ export default class Home extends React.Component{
           </div>
           <div className="collab__text">
             <ul>
-              <li>- Les élèves peuvent s’entraider et pourquoi pas y trouver un groupe de révisions. </li>
+              <li>Les élèves peuvent s’entraider et pourquoi pas y trouver un groupe de révisions. </li>
               <br/>
-              <li>- Nos professeurs sont également présent pour fournir une aide 24h/24 gratuitement. Si il est bloqué sur un devoir, un exposé, parfois l’on a besoin juste d’un petit coup de pouce peut sauver une soirée.</li>
+              <li> Nos professeurs sont également présent pour fournir une aide 24h/24 gratuitement. Si il est bloqué sur un devoir, un exposé, parfois l’on a besoin juste d’un petit coup de pouce peut sauver une soirée.</li>
             </ul>
           </div>
         </div>
@@ -199,25 +166,25 @@ export default class Home extends React.Component{
           <h1>Questions fréquentes</h1>
           <ul>
             <li>
-              <h2>Où se passent exactement les cours ?</h2>
+              <h3>Où se passent exactement les cours ?</h3>
               <p>Les cours se déroulent chez nos professeurs, chez un élève, dans les locaux de nos partenaires. (Mairie, centre aéré etc...)</p>
             </li>
             <li>
-              <h2>Ils y a t&apos;ils des cours pendant les vacances scolaires ?</h2>
+              <h3>Ils y a t&apos;ils des cours pendant les vacances scolaires ?</h3>
               <p>Si le professeur et les élèves le souhaitent, c&apos;est tout à fais possible.
               N&apos;hésitez pas à en discuter quelques jours avant les vacances.
               Nous organisons aussi des stages de perfectionnement pour ceux qui le souhaitent.</p>
             </li>
             <li>
-              <h2>Les groupes sont t&apos;ils homogène ?</h2>
+              <h3>Les groupes sont t&apos;ils homogène ?</h3>
               <p>Oui, le maximum est fait pour regrouper les élèves de la même tranche d&apos;âge et favoriser de bons résultats.</p>
             </li>
             <li>
-              <h2>Que faire si je dois manquer un cours ?</h2>
+              <h3>Que faire si je dois manquer un cours ?</h3>
               <p>Assurer vous de prévenir le professeurs au moins deux jours à l&apos;avance. et bien sûr, vous ne serez pas facturer.</p>
             </li>
             <li>
-              <h2>Est t&apos;il possible de faire un cours de groupe à mon domicile ?</h2>
+              <h3>Est t&apos;il possible de faire un cours de groupe à mon domicile ?</h3>
               <p>Oui bien sûr, il suffit que le professeur et les autres élèves donnent leur accord. Nous nous chargerons de faire les demandes.</p>
             </li>
           </ul>
@@ -226,15 +193,8 @@ export default class Home extends React.Component{
         <div className="children">
         <img
         src={children}
-        style={{ height: "auto", width: "100%" }}
         alt=""
       />
-        </div>
-  
-        <div className="direction">
-          <Link to="/application">En savoir plus</Link>
-          <Link to="/description">Description</Link>
-          <Link to="/thanks">Thanks</Link>
         </div>
       </main>
     );

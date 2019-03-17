@@ -21,6 +21,7 @@ html {
 
 @media (max-width: $phone) {
   .hero {
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,13 +36,14 @@ html {
 
     &__title {
       h3 {
+        margin-top: 1vh;
         color: rgba(87, 41, 151, 0.739);
         font-size: 12px;
       }
     }
 
     button {
-      margin-top: 10px; 
+      margin-top: 2vh; 
       text-align: center;
       order: 3;
       width: 150px;
@@ -64,11 +66,17 @@ html {
       }
     }
   }
+  /*----------------- Section VOS AVANTAGES -----------------*/
+  /*----------------- Section: Formulaire -----------------*/
+  /*----------------- Section: Collaboration Slack -----------------*/
+  /*----------------- Section: FAQ -----------------*/
+
 }
 
 @media screen and ( min-width:$phone) and (max-width:$tablet) {
   .hero {
     width: $tablet;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,25 +121,32 @@ html {
       }
     }
   }
+
+  /*----------------- Section VOS AVANTAGES -----------------*/
+  /*----------------- Section: Formulaire -----------------*/
+  /*----------------- Section: Collaboration Slack -----------------*/
+  /*----------------- Section: FAQ -----------------*/
 }
 
 @media(min-width: $tablet-pro) {
   .hero {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    box-shadow: 0 4px 8px 0 rgba(129, 17, 221, 0.2);
+
     h1 {
       font-size: 28px;
-      color: #6926C5;
+      color: $main-violet;
     }
-    
+
     &__title {
       margin-left: 30px;
       text-align: center;
       width: 600px;
+
       h3 {
         font-size: 14px;
         color: rgba(87, 41, 151, 0.739);
@@ -140,7 +155,7 @@ html {
 
     button {
       transform: translate(-326px, 70px);
-      margin-top: 30px; 
+      margin-top: 30px;
       text-align: center;
       order: 3;
       width: 150px;
@@ -158,127 +173,177 @@ html {
     &__svg {
       transform: translateX(-40px);
       order: 3;
+      z-index: -1;
+
       img {
         height: auto;
         width: 460px;
       }
     }
   }
-}
-.value {
-  border: 5px dashed violet;
-  height: auto;
-  padding: 50px;
-  // height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  &__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5vh;
 
-    button {
-      margin-top: 10px;
-      vertical-align: middle;
-      color: white;
-      font-size: 32px;
-      height: 60px;
-      width: 350px;
-      border-radius: 30px;
-      background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5);
-    }    
-  }
-
-  &__cols {
-    height: 80vh;
-    flex-wrap: wrap;
+  /*----------------- Section VOS AVANTAGES -----------------*/
+  .value {
+    margin-top: 2vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    &-in {
-      width: 50%;
+    &__title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5vh;
+
+      h1 {
+        vertical-align: middle;
+        color: $main-violet;
+        font-size: 28px;
+      }
+    }
+
+    &__cols {
+      height: 80vh;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-in {
+        text-align: center;
+        width: 33%;
+      }
     }
   }
 
-}
+  /*----------------- Section: Formulaire -----------------*/
 
-.reservation {
-  border: 2px dashed red;
-  height: 40vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: red;
+  .reservation {
+    background-color: $main-violet;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  &__btn {
-    Form {
-      background-color: red;
-      width: 600px;
+    &__btn {
+      Form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+
+        input {
+          border: 2px solid $main-violet;
+          width: 240px;
+          height: 5vh;
+          margin-left: 2vw;
+          -webkit-text-fill-color: $light-violet;
+          text-align: center;
+        }
+
+        input:last-child {
+          border-radius: 30px;
+        }
+      }
+
+      width: 800px;
+      height: 200px;
+      // border: 2px solid green;
     }
-    width: 600px;
-    height: 200px;
-    border: 2px solid green;
-  }
-  
-  #center {
-    border: 2px dotted blue;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-}
 
-.collab {
-  // background-color: blue;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    #center {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
 
-  &__logo {
-    // background-color: red;
-    width: 30%;
-    height: 70%;
+  /*----------------- Section: Collaboration Slack -----------------*/
+
+  .collab {
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+
+    &__logo {
+      width: 30%;
+      height: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: $main-violet;
+
+      &-logo {
+        img {
+          height: auto;
+          width: 160px;
+        }
+      }
+
+      &-text {
+        margin-top: 2vh;
+      }
+    }
+
+    &__text {
+      color: $light-violet;
+      text-align: center;
+      width: 30%;
+      height: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+
+      ul {
+        list-style-type: none;
+      }
+    }
   }
 
-  &__text {
-    // background-color: green;
-    width: 30%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
+  /*----------------- Section: Faq -----------------*/
+  .faq {
+    color: white;
+    background-color: $main-violet;
+
+    h1 {
+      text-align: center;
+    }
 
     ul {
-      list-style-type: none;
+      margin-top: 5vh;
+      display: flex;
+      align-items: start;
+      list-style: none;
+      flex-wrap: wrap;
+
+      li {
+        width: 50%;
+        margin-top: 2vh;
+        margin-bottom: vh;
+
+        p {
+          margin-top: 1vh;
+          text-align: justify;
+          width: 90%;
+          font-style: oblique;
+          font-weight: 400;
+        }
+      }
     }
   }
-}
 
-.faq {
-  height: 50vh;
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  ul {
-    list-style-type: none;
+  .children {
+    display: flex;
+    justify-content: center;
+    img {
+      height: auto;
+      width: 360px;
+    }
   }
-}
-
-.children {
-  display: flex;
-  justify-content: center;
 }
