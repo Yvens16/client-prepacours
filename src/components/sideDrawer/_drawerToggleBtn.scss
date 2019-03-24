@@ -1,3 +1,5 @@
+@import "../../sass/abstracts/variables";
+
 .toggle-btn {
   display: flex;
   flex-direction: column;
@@ -13,7 +15,7 @@
   &__line{
     width: 30px;
     height: 2px;
-    background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5);
+    background-image: $btn-color;
   }
 }
 

@@ -1,3 +1,4 @@
+@import '../../sass/abstracts/variables';
 .side-drawer {
   height: 100%;
   background: white;
@@ -8,7 +9,7 @@
   width: 70%;
   max-width: 400px;
   z-index: 200;
-  background-image: linear-gradient(to top, #00A0F5, #6926C5, #6926C5);
+  background-image: $btn-color;
 
   ul {
     height: 50%;

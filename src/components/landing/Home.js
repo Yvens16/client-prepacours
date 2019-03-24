@@ -40,8 +40,8 @@ export default class Home extends React.Component{
             Un cours de soutien ne même pas à la réussite.
             Seul une préparation intensive et un état d&apos;ésprit à toute épreuve le peut.
             </h3>
+            <button><Link className='a' to='/application'>Réserver un cours</Link></button>
           </div>
-          <button><Link className='a' to='/application'>Réserver un cours</Link></button>
           <div className="hero__svg">
           <img
           src={hero}

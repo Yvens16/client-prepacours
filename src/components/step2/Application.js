@@ -46,15 +46,17 @@ class Application extends React.Component {
 
             <label>
               <h4>Quels sont les 3 dernières moyennes de l&apos;élève en maths? (Exemple: 13, 8, 6)</h4>
-              <input type="number" name="note1" id="note1" onChange={e => this.onFormChange(e)}/>
-              <input type="number" name="note2" id="note2" onChange={e => this.onFormChange(e)}/>
-              <input type="number" name="note3" id="note3" onChange={e => this.onFormChange(e)}/>
+              <input placeholder='12' type="number" name="note1" id="note1" onChange={e => this.onFormChange(e)}/>
+              <input placeholder='15' type="number" name="note2" id="note2" onChange={e => this.onFormChange(e)}/>
+              <input placeholder='17' type="number" name="note3" id="note3" onChange={e => this.onFormChange(e)}/>
             </label>
 
             <label>
               <h4>Comment l&apos;aider vous dans ses études ? </h4>
-              <input type="text" name="description" id="description"
-                placeholder="Je l'aide régulièrement sur tel matière ou j'ai très peut de temps pour lui venir en aide..."
+              <textarea type="text" name="description" id="description"
+                placeholder="Facultatif"
+                cols="60"
+                rows="10"
               onChange={e => this.onFormChange(e)}/>
             </label>
             <label>
@@ -71,7 +73,7 @@ class Application extends React.Component {
               >
               </DatePicker>
             </label>
-            <input type="submit" value="Validez pour 2h gratuite" onChange={e => this.onFormChange(e)}/>
+            <input type="submit" value="Validez pour 1h gratuite" onChange={e => this.onFormChange(e)}/>
           </Form>
         </div>
       </div>

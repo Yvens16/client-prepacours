@@ -1,3 +1,5 @@
+@import "../../sass/abstracts/variables";
+
 .toolbar {
   position: fixed;
   top: 0;
@@ -16,7 +18,7 @@
       margin-left: 0.5rem;
     }
     &-logo a{
-      // background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5);
+      // background-image: $btn-color;
       color: black;
       text-decoration: none;
       font-size: 18px;
@@ -35,7 +37,7 @@
         width: 140px;
         height: 25px;
         border-radius: 30px;
-        background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5);
+        background-image: $btn-color;
       }
 
       .fb-share-button{
@@ -49,10 +51,6 @@
       list-style: none;
       color: white;
       text-decoration: none
-    }
-    &-items a:hover,
-    &-items a:active{
-      color: red;
     }
   }
 }
