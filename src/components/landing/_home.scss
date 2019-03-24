@@ -12,711 +12,128 @@ html {
   font-style: normal;
 }
 
-.home{
-  .logo{
-    background-color: #fff;
-    border-radius: 10px;
-  }
-}
+.home {
+  margin-top: 25%;
+  font-size: 14px;
+  text-align: center;
 
-@media (max-width: $phone) {
   .hero {
-    height: 78vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 200px;
-    margin-top: 60px;
-    padding: 18px;
-    box-shadow: 0 0 8px 0 rgba(129, 17, 221, 0.2);
-
-
-    h1 {
-      color: $main-violet;
-      font-size: 24px;
-    }
 
     &__title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      h3 {
-        margin-top: 1vh;
-        color: rgba(87, 41, 151, 0.739);
-        font-size: 12px;
-      }
-          button {
-            margin-top: 2vh; 
-            text-align: center;
-            order: 3;
-            width: 150px;
-            height: 30px;
-            font-size: 15px;
-            border-radius: 22px;
-            background-image: $btn-color;
-      
-            a {
-              color: white;
-              text-decoration: none;
-            }
-          }
-      
-    }
-
-    &__svg {
-      order: 3;
-      img {
-        height: auto;
-        width: 360px;
-      }
-    }
-  }
-  /*----------------- Section VOS AVANTAGES -----------------*/
-
-  .value {
-    // z-index: -100;
-    display: flex;
-    flex-direction: column;
-    padding: 1vh 0;
-    &__title {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 5vh;
-
       h1 {
-        vertical-align: middle;
-        color: $main-violet;
-        font-size: 28px;
+        color: $main-color;
       }
-    }
-
-    &__cols {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      &-in {
-        margin-top: 50px;
-        text-align: center;
-        width: 100%;
-      }
-    }
-  }
-
-  /*----------------- Section: Formulaire -----------------*/
-  .reservation {
-    margin-top: 10vh;
-    background-color: $main-violet;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &__btn {
-      Form {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-
-        input {
-          border: 2px solid $main-violet;
-          width: 240px;
-          height: 5vh;
-          margin-left: 2vw;
-          -webkit-text-fill-color: $light-violet;
-          text-align: center;
-        }
-
-        input:last-child {
-          border-radius: 30px;
-        }
-      }
-
-      width: 800px;
-      height: 200px;
-      // border: 2px solid green;
-    }
-
-    #center {
-      flex-basis: 100%;
-      text-align: center;
-    }
-  }
-  /*----------------- Section: Collaboration Slack -----------------*/
-  .collab {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5vh;
-
-    &__logo {
-      width: 30%;
-      height: 70%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      color: $main-violet;
-
-      &-logo {
-        img {
-          height: auto;
-          width: 160px;
-        }
-      }
-
-      &-text {
-        margin-top: 2vh;
-      }
-    }
-
-    &__text {
-      color: $light-violet;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-
-      ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-
-        li {
-          flex: 0 0 50%;
-          vertical-align: middle;
-        }
-      }
-    }
-  }
-  /*----------------- Section: FAQ -----------------*/
-  .faq {
-    color: white;
-    background-color: $main-violet;
-    height: 110vh;
-    margin: 2vh 0;
-    padding: 1vh;
-
-
-    h1 {
-      text-align: center;
-    }
-
-    ul {
-      margin-top: 5vh;
-      display: flex;
-      // align-items: start;
-      list-style: none;
-      flex-wrap: wrap;
-
-      li {
-        width: 50%;
-        margin-top: 2vh;
-        margin-bottom: vh;
-
-        p {
-          margin-top: 1vh;
-          text-align: justify;
-          width: 90%;
-          font-style: oblique;
-          font-weight: 400;
-        }
-      }
-    }
-  }
-
-}
-
-@media screen and ( min-width:$phone) and (max-width:$tablet) {
-  .hero {
-    width: $tablet;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
-    box-shadow: 0 4px 8px 0 rgba(129, 17, 221, 0.2);
-
-    
-    h1 {
-      font-size: 28px;
-      color: $main-violet;
-    }
-    
-    &__title {
-      width: 500px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       h3 {
-        font-size: 14px;
-        color: rgba(87, 41, 151, 0.739);
+        color: $light-color;
+        // font-size: 10px;
+        margin-top: 3%;
       }
       button {
-        margin-top: 10px; 
-        text-align: center;
-        order: 3;
-        width: 150px;
-        height: 30px;
-        font-size: 15px;
-        border-radius: 22px;
-        background-image: $btn-color;
-  
+        margin-top: 6%;
+        width: 40%;
+        cursor: pointer;
         a {
-          color: white;
           text-decoration: none;
+          color: #fff;
+          background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5);
+          border-radius: 30px;
+          padding: 5%;
+          // font-size: 11px;
         }
       }
     }
 
-
     &__svg {
-      order: 3;
-      img {
-        height: auto;
-        width: 360px;
-      }
+      margin-top: 5%;
+      z-index: -50;
     }
   }
 
-  /*----------------- Section VOS AVANTAGES -----------------*/
   .value {
+    margin-top: 5%;
 
-    .home {
-      width: 100vw;
-    }
-    width: $tablet;
-    margin-top: 2vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &__title {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 5vh;
-
-      h1 {
-        vertical-align: middle;
-        color: $main-violet;
-        font-size: 28px;
-      }
+    h1 {
+      color: $main-color;
     }
 
     &__cols {
-      height: 80vh;
-      flex-wrap: wrap;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-
+      // font-size: 12px;
       &-in {
-        text-align: center;
-        width: 33%;
+        margin-top: 10%;
+
+        h2 {
+          color: $main-color;
+        }
+
+        p {
+          color: $light-color;
+        }
       }
     }
   }
-  /*----------------- Section: Formulaire -----------------*/
+
   .reservation {
-    background-color: $main-violet;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 768px;
+    margin-top: 5%;
+    background-color: $main-color;
+    padding: 5% 0;
 
     &__btn {
-      Form {
-        width: 100%;
-        height: 100%;
+      form {
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
         align-items: center;
 
         input {
-          border: 2px solid $main-violet;
-          width: 240px;
-          height: 5vh;
-          margin-left: 2vw;
-          -webkit-text-fill-color: $light-violet;
+          margin-top: 5%;
+          width: 70%;
           text-align: center;
+          border: 1px solid $main-color;
+          color: $light-color;
+          -webkit-text-fill-color: $light-color;
         }
-
-        input:last-child {
-          border-radius: 30px;
+        #center {
+          width: 100%;
         }
       }
-
-      width: 800px;
-      height: 200px;
-      // border: 2px solid green;
-    }
-
-    #center {
-      flex-basis: 100%;
-      text-align: center;
     }
   }
-  /*----------------- Section: Collaboration Slack -----------------*/
+
   .collab {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5vh;
-
+    padding: 5%;
+    // font-size: 11px;
+    color: $light-color;
     &__logo {
-      width: 30%;
-      height: 70%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      color: $main-violet;
-      text-align: center;
-
+      margin-top: 5%;
+      color: $main-color;
       &-logo {
         img {
-          height: auto;
-          width: 160px;
+          width: 30%;
         }
       }
-
-      &-text {
-        margin-top: 2vh;
-      }
     }
-
     &__text {
-      color: $light-violet;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-
       ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-
-        li {
-          flex: 0 0 50%;
-          vertical-align: middle;
-        }
+        list-style: none;
+        margin-top: 5%;
       }
     }
   }
-  /*----------------- Section: FAQ -----------------*/
   .faq {
-    color: white;
-    background-color: $main-violet;
-    height: 60vh;
-
+    // font-size: 14px;
     h1 {
-      text-align: center;
+      color: $main-color;
     }
-
     ul {
-      margin-top: 5vh;
-      display: flex;
-      // align-items: start;
-      list-style: none;
-      flex-wrap: wrap;
-
       li {
-        width: 50%;
-        margin-top: 2vh;
-        margin-bottom: vh;
-
-        p {
-          margin-top: 1vh;
-          text-align: justify;
-          width: 90%;
-          font-style: oblique;
-          font-weight: 400;
+        color: $light-color;
+        margin-top: 5%;
+        h3 {
+          color: $main-color;
+        }
+        p{
+          margin-top: 5%;
         }
       }
     }
-  }
-}
-
-@media (max-width: 520px) {
-  .hero {
-    height: 92vh;
-  }
-}
-
-@media (max-width: 321px) {
-  .hero {
-    height: 105vh;
-  }
-  .collab {
-    padding: 5vh;
-    height: 100vh;
-    text-align: center;
-
-    &__text {
-      margin-top: 10vh;
-    }
-  }
-  .reservation {
-    width: 341px;
-  }
-  .faq {
-    width: 341px;
-    height: 160vh;
-  }
-
-}
-
-@media (max-width: 360px) {
-  .faq {
-    height: 873px;
-  }
-}
-
-@media(min-width: $tablet-pro) {
-  .hero {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px 0 rgba(129, 17, 221, 0.2);
-
-    h1 {
-      font-size: 28px;
-      color: $main-violet;
-    }
-
-    &__title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;  
-      margin-left: 30px;
-      text-align: center;
-      width: 600px;
-
-      h3 {
-        font-size: 14px;
-        color: $light-violet;;
-      }
-      button {
-        margin-top: 30px;
-        text-align: center;
-        order: 3;
-        width: 150px;
-        height: 30px;
-        font-size: 13px;
-        border-radius: 22px;
-        background-image: $btn-color;
-  
-        a {
-          color: white;
-          text-decoration: none;
-        }
-      }
-    }
-
-
-    &__svg {
-      transform: translateX(-40px);
-      order: 3;
-      z-index: -1;
-
-      img {
-        height: auto;
-        width: 460px;
-      }
-    }
-  }
-
-  /*----------------- Section VOS AVANTAGES -----------------*/
-  .value {
-    margin-top: 2vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &__title {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 5vh;
-
-      h1 {
-        vertical-align: middle;
-        color: $main-violet;
-        font-size: 28px;
-      }
-    }
-
-    &__cols {
-      height: 80vh;
-      flex-wrap: wrap;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      &-in {
-        text-align: center;
-        width: 33%;
-      }
-    }
-  }
-
-  /*----------------- Section: Formulaire -----------------*/
-
-  .reservation {
-    background-color: $main-violet;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &__btn {
-      Form {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-
-        input {
-          border: 2px solid $main-violet;
-          width: 240px;
-          height: 5vh;
-          margin-left: 2vw;
-          -webkit-text-fill-color: $light-violet;
-          text-align: center;
-        }
-
-        input:last-child {
-          border-radius: 30px;
-        }
-      }
-
-      width: 800px;
-      height: 200px;
-      // border: 2px solid green;
-    }
-
-    #center {
-      flex-basis: 100%;
-      text-align: center;
-    }
-  }
-
-  /*----------------- Section: Collaboration Slack -----------------*/
-
-  .collab {
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &__logo {
-      width: 30%;
-      height: 70%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      color: $main-violet;
-
-      &-logo {
-        img {
-          height: auto;
-          width: 160px;
-        }
-      }
-
-      &-text {
-        margin-top: 2vh;
-      }
-    }
-
-    &__text {
-      color: $light-violet;
-      text-align: center;
-      width: 30%;
-      height: 70%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 20px;
-
-      ul {
-        list-style-type: none;
-      }
-    }
-  }
-
-  /*----------------- Section: Faq -----------------*/
-  .faq {
-    color: white;
-    background-color: $main-violet;
-    height: 60vh;
-
-    h1 {
-      text-align: center;
-    }
-
-    ul {
-      margin-top: 5vh;
-      display: flex;
-      // align-items: start;
-      list-style: none;
-      flex-wrap: wrap;
-
-      li {
-        width: 50%;
-        margin-top: 2vh;
-        margin-bottom: vh;
-
-        p {
-          margin-top: 1vh;
-          text-align: justify;
-          width: 90%;
-          font-style: oblique;
-          font-weight: 400;
-        }
-      }
-    }
-  }
-
-  .children {
-    display: flex;
-    justify-content: center;
-    // height: 30vh;
-    img {
-      height: auto;
-      width: 360px;
-    }
-  }
-}
-
-@media (max-width: 255px) {
-  .hero {
-    height: 112vh;
   }
 }

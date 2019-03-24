@@ -1,92 +1,42 @@
 @import "../../sass/abstracts/variables";
 
 .formStep {
-  margin-top: 10vh;
-  height: 111vh;
-  display: flex;
-  justify-content: center;
-  color: $main-violet;
-  text-align: center;
+  font-size: 14px;
+  height: 100%;
   .formulaire {
-    Form {
+    margin-top: 20%;
+    height: 80%;
+    text-align: center;
+    h1 {
+      color: $main-color;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 5%;
+
       input {
-        border: 1px solid $main-violet;
-        width: 240px;
-        height: 5vh;
-        margin-left: 2vw;
-        -webkit-text-fill-color: $light-violet;
+        border: 1px solid $main-color;
         text-align: center;
-        margin: 3vh 1vh;
+        -webkit-text-fill-color: $light-color;
+        margin-top: 5%;
       }
-      text-align: center;
-      textarea {
-        -webkit-text-fill-color: $light-violet;
-        margin: 3vh 1vh;
-        border: 1px solid $main-violet;
-        text-align: center; 
+
+      label {
+        margin-top: 5%;
+        h4 {
+          color: $main-color;
+        }
+        textarea {
+          -webkit-text-fill-color: $main-color;
+          width: 80%;
+          padding: 5%;
+          margin-top: 3%;
+          border: 1px solid $main-color;
+        }
       }
     }
   }
-}
-@media (max-width: 435px) {
-  .formStep {
-    font-size: 20px;
-    word-wrap: break-word;
-    hyphens: auto;
-    padding: 10px;
-  }
-  h1 {
-    overflow-wrap: break-word;
-    // font-size: 14px;
-    padding: 5vh;
-    word-wrap: break-word;
-    hyphens: auto;
-
-  }
-  h4 {
-    overflow-wrap: break-word;
-    // font-size: 14px;
-    padding: 5vh;
-    word-wrap: break-word;
-    hyphens: auto;
-
-  }
-}
-
-
-@media (max-width: 365px) {
-  .formStep {
-    font-size: 15px;
-    word-wrap: break-word;
-    hyphens: auto;
-    padding: 10px;
-  }
-  h1 {
-    overflow-wrap: break-word;
-    // font-size: 14px;
-    padding: 5vh;
-    word-wrap: break-word;
-    hyphens: auto;
-
-  }
-  h4 {
-    overflow-wrap: break-word;
-    // font-size: 14px;
-    padding: 5vh;
-    word-wrap: break-word;
-    hyphens: auto;
-
-  }
-}
-
-@media (max-width: 615px) {
-  .formStep {
-  height: 134vh;
-  }
-}
-
-@media (max-width: 530px) {
-  .formStep {
-    height: 195vh;
-    }
 }

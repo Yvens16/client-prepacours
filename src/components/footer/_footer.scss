@@ -1,60 +1,20 @@
 @import "../../sass/abstracts/variables";
+
 .footer {
-  height: 10vh;
-  background-color: $main-violet;
-  bottom: 0;
-  color: #fff;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  background-color: $main-color;
   ul {
     list-style: none;
-    display: flex;
-    align-items: center;
+    padding-bottom: 5%;
+    text-align: center;
+    li:first-child {
+      margin: 0;
+    }
     li {
-      margin-left: 5px;
-      margin-left: 3vw;
+      margin-top: 5%;
       a {
-      text-decoration: none;
-      color: #fff;
+        color: #fff;
+        text-decoration: none;
       }
     }
-  }
-}
-
-@media (max-width: 360px) {
-  .footer {
-    // height: vh;
-    bottom: 0;
-    ul {
-      display: flex;
-      flex-direction: column;
-
-      li {
-        margin-top: 5vh;
-      }
-    }
-  }
-}
-
-@media (max-width: 320px) {
-  .footer {
-    height: 40vh;
-    width: 107vw;
-    }
-}
-
-@media (max-width: 447px) {
-  .footer {
-    bottom: 0;
-    height: 208px;
-  }
-}
-
-@media (max-width: 670px) {
-  .footer {
-    bottom: 0;
   }
 }
