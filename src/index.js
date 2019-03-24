@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-// import './main.css';
+import './main.css';
 import App from './App';
 // import Test from './Test';
 // import Form from '../src/components/standalone/form/Form';
