@@ -9,678 +9,94 @@ html {
   font-weight: 700;
   font-style: normal; }
 
-.home .logo {
-  background-color: #fff;
-  border-radius: 10px; }
-
-@media (max-width: 415px) {
-  .hero {
-    height: 78vh;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-align: center;
-            align-items: center;
-    margin-top: 200px;
-    margin-top: 60px;
-    padding: 18px;
-    box-shadow: 0 0 8px 0 rgba(129, 17, 221, 0.2); }
-    .hero h1 {
-      color: #6926C5;
-      font-size: 24px; }
-    .hero__title {
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-              flex-direction: column;
-      -webkit-box-align: center;
-              align-items: center; }
-      .hero__title h3 {
-        margin-top: 1vh;
-        color: rgba(87, 41, 151, 0.739);
-        font-size: 12px; }
-      .hero__title button {
-        margin-top: 2vh;
-        text-align: center;
-        -webkit-box-ordinal-group: 4;
-                order: 3;
-        width: 150px;
-        height: 30px;
-        font-size: 15px;
-        border-radius: 22px;
-        background-image: -webkit-linear-gradient(left, #00A0F5, #6926C5, #6926C5);
-        background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5); }
-        .hero__title button a {
-          color: white;
-          text-decoration: none; }
-    .hero__svg {
-      -webkit-box-ordinal-group: 4;
-              order: 3; }
-      .hero__svg img {
-        height: auto;
-        width: 360px; }
-  /*----------------- Section VOS AVANTAGES -----------------*/
-  .value {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    padding: 1vh 0; }
-    .value__title {
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-              align-items: center;
-      margin-bottom: 5vh; }
-      .value__title h1 {
-        vertical-align: middle;
-        color: #6926C5;
-        font-size: 28px; }
-    .value__cols {
-      height: 100%;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-              flex-direction: column;
-      -webkit-box-align: center;
-              align-items: center; }
-      .value__cols-in {
-        margin-top: 50px;
-        text-align: center;
-        width: 100%; }
-  /*----------------- Section: Formulaire -----------------*/
-  .reservation {
-    margin-top: 10vh;
-    background-color: #6926C5;
-    height: 40vh;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center; }
-    .reservation__btn {
-      width: 800px;
-      height: 200px; }
-      .reservation__btn Form {
-        width: 100%;
-        height: 100%;
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-pack: center;
-                justify-content: center;
-        flex-wrap: wrap;
-        -webkit-box-align: center;
-                align-items: center; }
-        .reservation__btn Form input {
-          border: 2px solid #6926C5;
-          width: 240px;
-          height: 5vh;
-          margin-left: 2vw;
-          -webkit-text-fill-color: rgba(104, 38, 197, 0.541);
-          text-align: center; }
-        .reservation__btn Form input:last-child {
-          border-radius: 30px; }
-    .reservation #center {
-      flex-basis: 100%;
-      text-align: center; }
-  /*----------------- Section: Collaboration Slack -----------------*/
-  .collab {
-    height: 100vh;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-align: center;
-            align-items: center;
-    padding: 5vh; }
-    .collab__logo {
-      width: 30%;
-      height: 70%;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-              align-items: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-              flex-direction: column;
+.home {
+  margin-top: 25%;
+  font-size: 14px;
+  text-align: center; }
+  .home .hero__title h1 {
+    color: #6926C5; }
+  .home .hero__title h3 {
+    color: rgba(104, 38, 197, 0.541);
+    margin-top: 3%; }
+  .home .hero__title button {
+    margin-top: 6%;
+    width: 40%;
+    cursor: pointer; }
+    .home .hero__title button a {
+      text-decoration: none;
+      color: #fff;
+      background-image: -webkit-linear-gradient(left, #00A0F5, #6926C5, #6926C5);
+      background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5);
+      border-radius: 30px;
+      padding: 5%; }
+  .home .hero__svg {
+    margin-top: 5%;
+    z-index: -50; }
+  .home .value {
+    margin-top: 5%; }
+    .home .value h1 {
       color: #6926C5; }
-      .collab__logo-logo img {
-        height: auto;
-        width: 160px; }
-      .collab__logo-text {
-        margin-top: 2vh; }
-    .collab__text {
-      color: rgba(104, 38, 197, 0.541);
-      text-align: center;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-              align-items: center; }
-      .collab__text ul {
-        list-style-type: none;
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-pack: justify;
-                justify-content: space-between;
-        width: 100%; }
-        .collab__text ul li {
-          -webkit-box-flex: 0;
-                  flex: 0 0 50%;
-          vertical-align: middle; }
-  /*----------------- Section: FAQ -----------------*/
-  .faq {
-    color: white;
-    background-color: #6926C5;
-    height: 110vh;
-    margin: 2vh 0;
-    padding: 1vh; }
-    .faq h1 {
-      text-align: center; }
-    .faq ul {
-      margin-top: 5vh;
-      display: -webkit-box;
-      display: flex;
-      list-style: none;
-      flex-wrap: wrap; }
-      .faq ul li {
-        width: 50%;
-        margin-top: 2vh;
-        margin-bottom: vh; }
-        .faq ul li p {
-          margin-top: 1vh;
-          text-align: justify;
-          width: 90%;
-          font-style: oblique;
-          font-weight: 400; } }
-
-@media screen and (min-width: 415px) and (max-width: 768px) {
-  .hero {
-    width: 768px;
-    height: 90vh;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-            justify-content: center;
-    margin-top: 60px;
-    box-shadow: 0 4px 8px 0 rgba(129, 17, 221, 0.2); }
-    .hero h1 {
-      font-size: 28px;
-      color: #6926C5; }
-    .hero__title {
-      width: 500px;
-      margin: auto;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-              flex-direction: column;
-      -webkit-box-align: center;
-              align-items: center; }
-      .hero__title h3 {
-        font-size: 14px;
-        color: rgba(87, 41, 151, 0.739); }
-      .hero__title button {
-        margin-top: 10px;
-        text-align: center;
-        -webkit-box-ordinal-group: 4;
-                order: 3;
-        width: 150px;
-        height: 30px;
-        font-size: 15px;
-        border-radius: 22px;
-        background-image: -webkit-linear-gradient(left, #00A0F5, #6926C5, #6926C5);
-        background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5); }
-        .hero__title button a {
-          color: white;
-          text-decoration: none; }
-    .hero__svg {
-      -webkit-box-ordinal-group: 4;
-              order: 3; }
-      .hero__svg img {
-        height: auto;
-        width: 360px; }
-  /*----------------- Section VOS AVANTAGES -----------------*/
-  .value {
-    width: 768px;
-    margin-top: 2vh;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center; }
-    .value .home {
-      width: 100vw; }
-    .value__title {
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-              align-items: center;
-      margin-bottom: 5vh; }
-      .value__title h1 {
-        vertical-align: middle;
-        color: #6926C5;
-        font-size: 28px; }
-    .value__cols {
-      height: 80vh;
-      flex-wrap: wrap;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-              align-items: center;
-      width: 100%; }
-      .value__cols-in {
-        text-align: center;
-        width: 33%; }
-  /*----------------- Section: Formulaire -----------------*/
-  .reservation {
-    background-color: #6926C5;
-    height: 40vh;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center;
-    width: 768px; }
-    .reservation__btn {
-      width: 800px;
-      height: 200px; }
-      .reservation__btn Form {
-        width: 100%;
-        height: 100%;
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-pack: center;
-                justify-content: center;
-        flex-wrap: wrap;
-        -webkit-box-align: center;
-                align-items: center; }
-        .reservation__btn Form input {
-          border: 2px solid #6926C5;
-          width: 240px;
-          height: 5vh;
-          margin-left: 2vw;
-          -webkit-text-fill-color: rgba(104, 38, 197, 0.541);
-          text-align: center; }
-        .reservation__btn Form input:last-child {
-          border-radius: 30px; }
-    .reservation #center {
-      flex-basis: 100%;
-      text-align: center; }
-  /*----------------- Section: Collaboration Slack -----------------*/
-  .collab {
-    height: 100vh;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-align: center;
-            align-items: center;
-    padding: 5vh; }
-    .collab__logo {
-      width: 30%;
-      height: 70%;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-              align-items: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-              flex-direction: column;
-      color: #6926C5;
-      text-align: center; }
-      .collab__logo-logo img {
-        height: auto;
-        width: 160px; }
-      .collab__logo-text {
-        margin-top: 2vh; }
-    .collab__text {
-      color: rgba(104, 38, 197, 0.541);
-      text-align: center;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-              align-items: center; }
-      .collab__text ul {
-        list-style-type: none;
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-pack: justify;
-                justify-content: space-between;
-        width: 100%; }
-        .collab__text ul li {
-          -webkit-box-flex: 0;
-                  flex: 0 0 50%;
-          vertical-align: middle; }
-  /*----------------- Section: FAQ -----------------*/
-  .faq {
-    color: white;
-    background-color: #6926C5;
-    height: 60vh; }
-    .faq h1 {
-      text-align: center; }
-    .faq ul {
-      margin-top: 5vh;
-      display: -webkit-box;
-      display: flex;
-      list-style: none;
-      flex-wrap: wrap; }
-      .faq ul li {
-        width: 50%;
-        margin-top: 2vh;
-        margin-bottom: vh; }
-        .faq ul li p {
-          margin-top: 1vh;
-          text-align: justify;
-          width: 90%;
-          font-style: oblique;
-          font-weight: 400; } }
-
-@media (max-width: 520px) {
-  .hero {
-    height: 92vh; } }
-
-@media (max-width: 321px) {
-  .hero {
-    height: 105vh; }
-  .collab {
-    padding: 5vh;
-    height: 100vh;
-    text-align: center; }
-    .collab__text {
-      margin-top: 10vh; }
-  .reservation {
-    width: 341px; }
-  .faq {
-    width: 341px;
-    height: 160vh; } }
-
-@media (max-width: 360px) {
-  .faq {
-    height: 873px; } }
-
-@media (min-width: 769px) {
-  .hero {
-    width: 100%;
-    height: 90vh;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-            justify-content: center;
-    box-shadow: 0 4px 8px 0 rgba(129, 17, 221, 0.2); }
-    .hero h1 {
-      font-size: 28px;
-      color: #6926C5; }
-    .hero__title {
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-              flex-direction: column;
-      -webkit-box-align: center;
-              align-items: center;
-      margin-left: 30px;
-      text-align: center;
-      width: 600px; }
-      .hero__title h3 {
-        font-size: 14px;
+    .home .value__cols-in {
+      margin-top: 10%; }
+      .home .value__cols-in h2 {
+        color: #6926C5; }
+      .home .value__cols-in p {
         color: rgba(104, 38, 197, 0.541); }
-      .hero__title button {
-        margin-top: 30px;
-        text-align: center;
-        -webkit-box-ordinal-group: 4;
-                order: 3;
-        width: 150px;
-        height: 30px;
-        font-size: 13px;
-        border-radius: 22px;
-        background-image: -webkit-linear-gradient(left, #00A0F5, #6926C5, #6926C5);
-        background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5); }
-        .hero__title button a {
-          color: white;
-          text-decoration: none; }
-    .hero__svg {
-      -webkit-transform: translateX(-40px);
-              transform: translateX(-40px);
-      -webkit-box-ordinal-group: 4;
-              order: 3;
-      z-index: -1; }
-      .hero__svg img {
-        height: auto;
-        width: 460px; }
-  /*----------------- Section VOS AVANTAGES -----------------*/
-  .value {
-    margin-top: 2vh;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center; }
-    .value__title {
+  .home .reservation {
+    margin-top: 5%;
+    background-color: #6926C5;
+    padding: 5% 0; }
+    .home .reservation__btn form {
       display: -webkit-box;
       display: flex;
-      -webkit-box-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-              align-items: center;
-      margin-bottom: 5vh; }
-      .value__title h1 {
-        vertical-align: middle;
-        color: #6926C5;
-        font-size: 28px; }
-    .value__cols {
-      height: 80vh;
-      flex-wrap: wrap;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-              justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
       -webkit-box-align: center;
               align-items: center; }
-      .value__cols-in {
+      .home .reservation__btn form input {
+        margin-top: 5%;
+        width: 70%;
         text-align: center;
-        width: 33%; }
-  /*----------------- Section: Formulaire -----------------*/
-  .reservation {
-    background-color: #6926C5;
-    height: 40vh;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center; }
-    .reservation__btn {
-      width: 800px;
-      height: 200px; }
-      .reservation__btn Form {
-        width: 100%;
-        height: 100%;
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-pack: center;
-                justify-content: center;
-        flex-wrap: wrap;
-        -webkit-box-align: center;
-                align-items: center; }
-        .reservation__btn Form input {
-          border: 2px solid #6926C5;
-          width: 240px;
-          height: 5vh;
-          margin-left: 2vw;
-          -webkit-text-fill-color: rgba(104, 38, 197, 0.541);
-          text-align: center; }
-        .reservation__btn Form input:last-child {
-          border-radius: 30px; }
-    .reservation #center {
-      flex-basis: 100%;
-      text-align: center; }
-  /*----------------- Section: Collaboration Slack -----------------*/
-  .collab {
-    height: 60vh;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center; }
-    .collab__logo {
-      width: 30%;
-      height: 70%;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-              align-items: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-              flex-direction: column;
+        border: 1px solid #6926C5;
+        color: rgba(104, 38, 197, 0.541);
+        -webkit-text-fill-color: rgba(104, 38, 197, 0.541); }
+      .home .reservation__btn form #center {
+        width: 100%; }
+  .home .collab {
+    padding: 5%;
+    color: rgba(104, 38, 197, 0.541); }
+    .home .collab__logo {
+      margin-top: 5%;
       color: #6926C5; }
-      .collab__logo-logo img {
-        height: auto;
-        width: 160px; }
-      .collab__logo-text {
-        margin-top: 2vh; }
-    .collab__text {
-      color: rgba(104, 38, 197, 0.541);
-      text-align: center;
-      width: 30%;
-      height: 70%;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-              align-items: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-              flex-direction: column;
-      padding: 20px; }
-      .collab__text ul {
-        list-style-type: none; }
-  /*----------------- Section: Faq -----------------*/
-  .faq {
-    color: white;
-    background-color: #6926C5;
-    height: 60vh; }
-    .faq h1 {
-      text-align: center; }
-    .faq ul {
-      margin-top: 5vh;
-      display: -webkit-box;
-      display: flex;
+      .home .collab__logo-logo img {
+        width: 30%; }
+    .home .collab__text ul {
       list-style: none;
-      flex-wrap: wrap; }
-      .faq ul li {
-        width: 50%;
-        margin-top: 2vh;
-        margin-bottom: vh; }
-        .faq ul li p {
-          margin-top: 1vh;
-          text-align: justify;
-          width: 90%;
-          font-style: oblique;
-          font-weight: 400; }
-  .children {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center; }
-    .children img {
-      height: auto;
-      width: 360px; } }
-
-@media (max-width: 255px) {
-  .hero {
-    height: 112vh; } }
+      margin-top: 5%; }
+  .home .faq h1 {
+    color: #6926C5; }
+  .home .faq ul li {
+    color: rgba(104, 38, 197, 0.541);
+    margin-top: 5%; }
+    .home .faq ul li h3 {
+      color: #6926C5; }
+    .home .faq ul li p {
+      margin-top: 5%; }
 
 .footer {
-  height: 10vh;
-  background-color: #6926C5;
-  bottom: 0;
-  color: #fff;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center; }
+  background-color: #6926C5; }
   .footer ul {
     list-style: none;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-            align-items: center; }
+    padding-bottom: 5%;
+    text-align: center; }
+    .footer ul li:first-child {
+      margin: 0; }
     .footer ul li {
-      margin-left: 5px;
-      margin-left: 3vw; }
+      margin-top: 5%; }
       .footer ul li a {
-        text-decoration: none;
-        color: #fff; }
-
-@media (max-width: 360px) {
-  .footer {
-    bottom: 0; }
-    .footer ul {
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-              flex-direction: column; }
-      .footer ul li {
-        margin-top: 5vh; } }
-
-@media (max-width: 320px) {
-  .footer {
-    height: 40vh;
-    width: 107vw; } }
-
-@media (max-width: 447px) {
-  .footer {
-    bottom: 0;
-    height: 208px; } }
-
-@media (max-width: 670px) {
-  .footer {
-    bottom: 0; } }
+        color: #fff;
+        text-decoration: none; }
 
 .notfound {
   background-color: aquamarine;
@@ -745,83 +161,38 @@ html {
     display: none; }
 
 .formStep {
-  margin-top: 10vh;
-  height: 111vh;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  color: #6926C5;
-  text-align: center; }
-  .formStep .formulaire Form {
+  font-size: 14px;
+  height: 100%; }
+  .formStep .formulaire {
+    margin-top: 20%;
+    height: 80%;
     text-align: center; }
-    .formStep .formulaire Form input {
-      border: 1px solid #6926C5;
-      width: 240px;
-      height: 5vh;
-      margin-left: 2vw;
-      -webkit-text-fill-color: rgba(104, 38, 197, 0.541);
-      text-align: center;
-      margin: 3vh 1vh; }
-    .formStep .formulaire Form textarea {
-      -webkit-text-fill-color: rgba(104, 38, 197, 0.541);
-      margin: 3vh 1vh;
-      border: 1px solid #6926C5;
-      text-align: center; }
-
-@media (max-width: 435px) {
-  .formStep {
-    font-size: 20px;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
-    padding: 10px; }
-  h1 {
-    overflow-wrap: break-word;
-    padding: 5vh;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto; }
-  h4 {
-    overflow-wrap: break-word;
-    padding: 5vh;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto; } }
-
-@media (max-width: 365px) {
-  .formStep {
-    font-size: 15px;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
-    padding: 10px; }
-  h1 {
-    overflow-wrap: break-word;
-    padding: 5vh;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto; }
-  h4 {
-    overflow-wrap: break-word;
-    padding: 5vh;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto; } }
-
-@media (max-width: 615px) {
-  .formStep {
-    height: 134vh; } }
-
-@media (max-width: 530px) {
-  .formStep {
-    height: 195vh; } }
+    .formStep .formulaire h1 {
+      color: #6926C5; }
+    .formStep .formulaire form {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -webkit-box-align: center;
+              align-items: center;
+      margin-bottom: 5%; }
+      .formStep .formulaire form input {
+        border: 1px solid #6926C5;
+        text-align: center;
+        -webkit-text-fill-color: rgba(104, 38, 197, 0.541);
+        margin-top: 5%; }
+      .formStep .formulaire form label {
+        margin-top: 5%; }
+        .formStep .formulaire form label h4 {
+          color: #6926C5; }
+        .formStep .formulaire form label textarea {
+          -webkit-text-fill-color: #6926C5;
+          width: 80%;
+          padding: 5%;
+          margin-top: 3%;
+          border: 1px solid #6926C5; }
 
 .t {
   height: 90vh; }
