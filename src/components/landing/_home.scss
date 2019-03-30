@@ -1,7 +1,7 @@
 @import "../../sass/abstracts/variables";
 * {
   margin: 0;
-  padding: 0;
+  padding: 0px;
   border: 0;
   box-sizing: border-box;
 }
@@ -17,6 +17,13 @@ html {
   font-size: 14px;
   text-align: center;
 
+  @media (min-width: 620px) {
+    font-size: 18px;
+  }
+  @media (min-width: 920px) {
+    font-size: 24px;
+  }
+
   .hero {
 
     &__title {
@@ -25,20 +32,26 @@ html {
       }
       h3 {
         color: $light-color;
-        // font-size: 10px;
         margin-top: 3%;
+
+        @media (min-width: 520px) {
+          padding: 5%;
+        }
       }
       button {
+        @media (min-width: 720px) {
+          font-size: 18px;
+        }
         margin-top: 6%;
         width: 40%;
         cursor: pointer;
+        background-color: #fff;
         a {
           text-decoration: none;
           color: #fff;
           background-image: linear-gradient(to right, #00A0F5, #6926C5, #6926C5);
           border-radius: 30px;
           padding: 5%;
-          // font-size: 11px;
         }
       }
     }
@@ -57,7 +70,6 @@ html {
     }
 
     &__cols {
-      // font-size: 12px;
       &-in {
         margin-top: 10%;
 
@@ -76,7 +88,9 @@ html {
     margin-top: 5%;
     background-color: $main-color;
     padding: 5% 0;
-
+     h1 {
+       color: #fff;
+     }
     &__btn {
       form {
         display: flex;
@@ -84,12 +98,17 @@ html {
         align-items: center;
 
         input {
+          height: 24px;
           margin-top: 5%;
           width: 70%;
           text-align: center;
           border: 1px solid $main-color;
           color: $light-color;
           -webkit-text-fill-color: $light-color;
+        }
+        input:last-child {
+          border-radius: 15px;
+          cursor: pointer;
         }
         #center {
           width: 100%;
@@ -100,12 +119,12 @@ html {
 
   .collab {
     padding: 5%;
-    // font-size: 11px;
     color: $light-color;
     &__logo {
       margin-top: 5%;
       color: $main-color;
       &-logo {
+        margin-top: 5%;
         img {
           width: 30%;
         }
@@ -119,11 +138,12 @@ html {
     }
   }
   .faq {
-    // font-size: 14px;
+    padding: 0 2%;
     h1 {
-      color: $main-color;
+      color:$main-color;
     }
     ul {
+      list-style: none;
       li {
         color: $light-color;
         margin-top: 5%;
@@ -133,6 +153,117 @@ html {
         p{
           margin-top: 5%;
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 420px) {
+  .home {
+    margin-top: 13%;
+    .hero {
+      &__svg {
+        img {
+          width: 60%;
+        }
+      }
+    }
+    .value {
+      &__cols {
+        &-in {
+          padding: 5%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1020px) {
+  .home {
+    font-size: 14px;
+    .hero {
+      margin-top: 10%;
+      display: flex;
+      height: 70vh;
+      &__title {
+        flex: 0 0 50%;
+      }
+      &__svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        img {
+          width: 80%;
+        }
+      }
+      box-shadow: $boxShadow;
+      padding: 1%;
+    }
+
+    .value {
+      &__cols {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        &-in {
+          width: 50%;
+          padding: 0 5%;
+          margin-top: 5%;
+        }
+      }
+    }
+
+    .reservation {
+      &__btn {
+        Form {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          input {
+            flex: 0 0 33%;
+            height: 50px;
+            font-size: 16px;
+            width: 30%;
+          }
+        }
+      }
+    }
+    .collab {
+      padding: 1%;
+      box-shadow: $boxShadow;
+      &__logo {
+        &-logo {
+         a {
+           img {
+            width: 18%;
+           }
+         }
+        }
+      }
+      &__text {
+        font-size: 18px;
+      }
+    }
+    .faq {
+      box-shadow: $boxShadow;
+      margin-top: 5%;
+      font-size: 18px;
+       ul {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+         li {
+           flex: 0 0 50%;
+         }
+       }
+    }
+    .children {
+      img {
+        width: 60%;
+        margin-top: 2%;
       }
     }
   }

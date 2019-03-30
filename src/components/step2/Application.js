@@ -73,7 +73,7 @@ class Application extends React.Component {
               >
               </DatePicker>
             </label>
-            <input type="submit" value="Validez pour 1h gratuite" onChange={e => this.onFormChange(e)}/>
+            <input type="submit" id="submit" value="Validez pour 1h gratuite" onChange={e => this.onFormChange(e)}/>
           </Form>
         </div>
       </div>

@@ -40,7 +40,8 @@ export default class Home extends React.Component{
             Un cours de soutien ne même pas à la réussite.
             Seul une préparation intensive et un état d&apos;ésprit à toute épreuve le peut.
             </h3>
-            <button><Link className='a' to='/application'>Réserver un cours</Link></button>
+            <button>
+            <Link className='a' to='/application'>Réserver un cours</Link></button>
           </div>
           <div className="hero__svg">
           <img
@@ -122,6 +123,7 @@ export default class Home extends React.Component{
         </div>
 
         <div className="reservation">
+          <h1>Une envie de meilleurs résultats ?</h1>
           <div className="reservation__btn">
             <Form ref='child' query='/form'>
               <input type="text" name="name" id="name" placeholder='Nom'
@@ -133,7 +135,7 @@ export default class Home extends React.Component{
               onChange={e => this.onChildChange(e)}/>
               <br/>
                 <div id='center'>
-                  <input type="submit"  value="Réserver un cours"/>
+                  <input type="submit"  value="Cliquez pour réserver un cours"/>
                 </div>
             </Form>
           </div>
@@ -141,6 +143,11 @@ export default class Home extends React.Component{
 
         <div className="collab">
           <div className="collab__logo">
+          <div className="collab__logo-text">
+          <h1>
+          Rejoignez Notre groupe Slack
+          </h1>
+          </div>
             <div className="collab__logo-logo">
             <a target="_blank"
             rel="noopener noreferrer" 
@@ -151,7 +158,6 @@ export default class Home extends React.Component{
                 />
             </a>
             </div>
-            <div className="collab__logo-text">Rejoignez Notre groupe Slack</div>
           </div>
           <div className="collab__text">
             <ul>

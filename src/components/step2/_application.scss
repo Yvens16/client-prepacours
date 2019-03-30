@@ -24,6 +24,12 @@
         margin-top: 5%;
       }
 
+      #submit {
+        border-radius: 30px;
+        width: 30vw;
+        font-size: 2vw;
+      }
+
       label {
         margin-top: 5%;
         h4 {
@@ -35,6 +41,25 @@
           padding: 5%;
           margin-top: 3%;
           border: 1px solid $main-color;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .formStep {
+    font-size: 16px;
+
+    .formulaire {
+      margin-top: 10%;
+      form {
+        input {
+          width: 50%;
+          font-size: 18px;
+        }
+        #date {
+          width: 50vw;
         }
       }
     }
