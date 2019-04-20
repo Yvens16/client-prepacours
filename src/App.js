@@ -53,7 +53,7 @@ class App extends Component {
         <Route  path="/application" component={Application} />
         <Route  path="/thanks" component={Thanks} />
         {/*404 route Always Last */}
-          <Route component={NotFound} />
+          {/** <Route component={NotFound} /> */} 
       </Switch>
       <Footer/> 
     </div>

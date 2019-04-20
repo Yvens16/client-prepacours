@@ -18,10 +18,10 @@ const Navbar = props => (
       <div className="toolbar__navigation-items">
         <ul>
           <li>
-            <div className="fb-share-button" data-href="https://www.facebook.com/fabuno/" data-layout="button_count" data-size="small" data-mobile-iframe="true">
-              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Ffabuno%2F&amp;src=sdkpreparse" className="fb-xfbml-parse-ignore">
+            <div class="fb-share-button" data-href="https://www.facebook.com/Prepacours-389632124953578/" data-layout="button_count" data-size="small">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FPrepacours-389632124953578%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
                 Partager
-      </a>
+              </a>
             </div>
           </li>
           <li>
